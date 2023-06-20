@@ -1,3 +1,5 @@
+// global execution
+// local execution
 // closures 
 console.log(this);
 console.log(window);
