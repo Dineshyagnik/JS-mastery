@@ -1,6 +1,9 @@
+// Hoisting
+
 console.log(this);
 console.log(window);
 console.log(myFunction);
+myFunction();
 console.log(fullName);
 
 function myFunction(){
