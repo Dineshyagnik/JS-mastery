@@ -28,7 +28,20 @@
 //     console.log(i);     // printing the value of i
 // }
 
+// let sum=0;
+// const n=100;
+// let i=1;
+// for(;i<=n;i++){
+//     sum+=i;
+// }
+// console.log(sum);
 
+let i=1;
+let n=5;
 
+while(i<=n){
+    console.log(i);
+    i+=1
+}
 
 
