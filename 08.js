@@ -36,12 +36,147 @@
 // }
 // console.log(sum);
 
-let i=1;
-let n=5;
+// let i=1;
+// let n=5;
 
-while(i<=n){
-    console.log(i);
-    i+=1
+// while(i<=n){
+//     console.log(i);
+//     i+=1
+// }
+
+// for(let i=0;i<=10;i++){
+//     if(i==5)
+//     break
+//     console.log(i);
+// }
+
+// let i=1;
+// for(;i<=20;i++){
+//     if(i==8)
+//     continue
+//     console.log(i);
+// }
+
+
+// nested for loops
+
+// first loop
+// for (let i = 1; i <= 3; i++) {
+
+//     // second loop
+//     for (let j = 1; j <= 3; j++) {
+//         if (i == 2) {
+//           break;
+//         }
+//         console.log(`i = ${i}, j = ${j}`);
+//     }
+// }
+
+
+// switch(new Date().getDay()){
+//     case 0:
+//         day='Sunday';
+//         break;
+//     case 1:
+//         day='Monday';
+//         break;    
+//     case 2:
+//         day='Tuesday';
+//         break;
+//     case 3:
+//         day='Wednesday';
+//         break;
+//     case 4:
+//         day='Thursday';
+//         break;
+//     case 5:
+//         day='Friday';
+//         break;
+//     case 6:
+//         day='Saturday';
+//         break  
+// }
+// console.log(day);
+
+// program using switch statement
+// let a = 2;
+
+// switch (a) {
+
+//     case 1:
+//         a = 'one';
+//         break;
+//     case 2:
+//         a = 'two';
+//         break;
+//     default:
+//         a = 'not found';
+//         break;
+// }
+// console.log(`The value is ${a}`);
+
+// program using switch statement
+// let a = 1;
+
+// switch (a) {
+//     case "1":
+//         a = 1;
+//         break;
+//     case 1:
+//         a = 'one';
+//         break;
+//     case 2:
+//         a = 'two';
+//         break;
+
+//     default:
+//         a = 'not found';
+//         break;
+// }
+// console.log(`The value is ${a}`);
+
+// program for a simple calculator
+// let result;
+
+// // take the operator input
+// const operator = prompt('Enter operator ( either +, -, * or / ): ');
+
+// // take the operand input
+// const number1 = parseFloat(prompt('Enter first number: '));
+// const number2 = parseFloat(prompt('Enter second number: '));
+
+// switch(operator) {
+//     case '+':
+//         result = number1 + number2;
+//         console.log(`${number1} + ${number2} = ${result}`);
+//         break;
+//     case '-':
+//         result = number1 - number2;
+//         console.log(`${number1} - ${number2} = ${result}`);
+//         break;
+//     case '*':
+//         result = number1 * number2;
+//         console.log(`${number1} * ${number2} = ${result}`);
+//         break;
+//     case '/':
+//         result = number1 / number2;
+//         console.log(`${number1} / ${number2} = ${result}`);
+//         break;
+
+//     default:
+//         console.log('Invalid operator');
+//         break;
+// }
+
+// multiple case switch program
+let fruit = 'apple';
+switch(fruit) {
+    case 'apple':
+    case 'mango':
+    case 'pineapple':
+        console.log(`${fruit} is a fruit.`);
+        break;
+    default:
+        console.log(`${fruit} is not a fruit.`);
+        break;
 }
-
-
