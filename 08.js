@@ -169,14 +169,31 @@
 // }
 
 // multiple case switch program
-let fruit = 'apple';
-switch(fruit) {
-    case 'apple':
-    case 'mango':
-    case 'pineapple':
-        console.log(`${fruit} is a fruit.`);
-        break;
-    default:
-        console.log(`${fruit} is not a fruit.`);
-        break;
+// let fruit = 'apple';
+// switch(fruit) {
+//     case 'apple':
+//     case 'mango':
+//     case 'pineapple':
+//         console.log(`${fruit} is a fruit.`);
+//         break;
+//     default:
+//         console.log(`${fruit} is not a fruit.`);
+//         break;
+// }
+
+
+// function greet(name) {
+//     console.log("Hello " + name + ":)");
+// }
+
+// let name = prompt("Enter a name: ");
+
+// greet(name);
+
+function add(a,b){
+    return a+b;
 }
+let res1=add(2,3);
+let res2=add(4,7);
+console.log(res1);
+console.log(res2);
