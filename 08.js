@@ -216,9 +216,59 @@
 
 // program to find the square of a number
 // function is declared inside the variable
-let x = function (num) { return num * num };
-console.log(x(4));
+// let x = function (num) { return num * num };
+// console.log(x(4));
 
-// can be used as variable value for other variables
-let y = x(3);
-console.log(y);
+// // can be used as variable value for other variables
+// let y = x(3);
+// console.log(y);
+
+
+// let a ='Hello';
+
+// function greet(){
+//     console.log(a);
+// }
+// greet();
+
+// let a="hello";
+
+// function greet(){
+//     a=3;
+// }
+// console.log(a);
+
+// greet();
+
+// console.log(a);
+
+// function greet(){
+//     a='hello';
+// }
+// greet()
+
+// console.log(a);
+
+// let a='hello';
+
+// function greet(){
+//     let b='world';
+//     console.log(a+b);
+// }
+// greet();
+
+// console.log(a+b); //error
+
+let a= 'Hello';
+
+function greet(){
+    let b='world';
+    console.log(a+' '+b);
+
+    if(b=='world'){
+        let c='hello';
+        console.log(a+' '+b+' '+c);
+    }
+    console.log(a+' '+b+' '+c); //error
+}
+greet();
