@@ -342,23 +342,106 @@
 // countDown(4); //4321
 
 // program to find the factorial of a number
-function factorial(x) {
+// function factorial(x) {
 
-    // if number is 0
-    if (x === 0) {
-        return 1;
-    }
+//     // if number is 0
+//     if (x === 0) {
+//         return 1;
+//     }
 
-    // if number is positive
-    else {
-        return x * factorial(x - 1);
-    }
-}
+//     // if number is positive
+//     else {
+//         return x * factorial(x - 1);
+//     }
+// }
 
-const num = 3;
+// const num = 3;
 
-// calling factorial() if num is non-negative
-if (num > 0) {
-    let result = factorial(num);
-    console.log(`The factorial of ${num} is ${result}`);
-}
+// // calling factorial() if num is non-negative
+// if (num > 0) {
+//     let result = factorial(num);
+//     console.log(`The factorial of ${num} is ${result}`);
+// }
+
+
+// object creation
+// const person = { 
+//     name: 'John',
+//     age: 20
+// };
+// console.log(typeof person); // object
+
+// const person = { 
+//     name: 'John', 
+//     age: 20, 
+// };
+
+// // accessing property
+// console.log(person.name); // John
+
+// const person = { 
+//     name: 'John', 
+//     age: 20, 
+// };
+
+// // accessing property
+// console.log(person["name"]); // John
+
+
+// nested object
+// const student = { 
+//     name: 'John', 
+//     age: 20,
+//     marks: {
+//         science: 70,
+//         math: 75
+//     }
+// }
+
+// // accessing property of student object
+// console.log(student.marks); // {science: 70, math: 75}
+
+// // accessing property of marks object
+// console.log(student.marks.science); // 70
+
+// const person = {
+//     name: 'Sam',
+//     age: 30,
+//     // using function as a value
+//     greet: function() { console.log('hello') }
+// }
+
+// person.greet(); // hello
+
+
+// accessing method and property
+// const person = {
+//     name: 'John',
+//     greet: function() { console.log('hello'); }
+// };
+
+// // accessing property
+// person.name; // John
+
+// // accessing method
+// person.greet(); // hello
+
+// const person = {
+//     name: 'John',
+//     age: 30,
+
+//     // accessing name property by using this.name
+//     greet: function() { console.log('The name is' + ' ' + this.name); }
+// };
+
+// person.greet();
+
+const person = {
+    name: 'John',
+    age: 30,
+    greet: function() {
+        let surname = 'Doe';
+        console.log('The name is' + ' ' + this.name + ' ' + surname); }
+};
+
+person.greet();
