@@ -436,12 +436,88 @@
 
 // person.greet();
 
-const person = {
-    name: 'John',
-    age: 30,
-    greet: function() {
-        let surname = 'Doe';
-        console.log('The name is' + ' ' + this.name + ' ' + surname); }
-};
+// const person = {
+//     name: 'John',
+//     age: 30,
+//     greet: function() {
+//         let surname = 'Doe';
+//         console.log('The name is' + ' ' + this.name + ' ' + surname); }
+// };
 
-person.greet();
+// person.greet();
+
+
+// constructor function
+// function Person () {
+//     this.name = 'John',
+//     this.age = 23,
+
+//      this.greet = function () {
+//         console.log('hello');
+//     }
+// }
+
+// // create objects
+// const person1 = new Person();
+// const person2 = new Person();
+
+// // access properties
+// console.log(person1.name);  // John
+// console.log(person2.name);  // John
+
+// function Person(person_name,person_age,person_gender){
+//     this.name=person_name;
+//     this.age=person_age;
+//     this.gender=person_gender;
+//     this.greet=function(){
+//         return ('Hi'+''+this.name);
+//     }
+// }
+
+// const person1=new Person('John',23,'Male');
+// const person2=new Person('Sami',12,'Female');
+
+// console.log(person1.age);
+// console.log(person2);
+
+// let person={
+//     name:'john'
+// }
+
+// console.log(person.name);
+
+// let student=person;
+
+// student.name='Sam';
+// console.log(person.name);
+
+// function Person(){
+//     this.name='John',
+//     this.age=23
+// }
+
+// const person1=new Person();
+// const person2=new Person();
+
+// person1.gender='male';
+
+// person1.greet=function(){
+//     console.log('Hello');
+// }
+
+// person1.greet();
+// // person2.greet(); // error doesn't have greet method
+
+
+function Person(){
+    this.name="John",
+    this.age=23
+}
+
+let person1=new Person();
+let person2=new Person();
+
+Person.prototype.gender='male';
+
+console.log(person1.gender);
+console.log(person2.gender);
