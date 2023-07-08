@@ -509,15 +509,76 @@
 // // person2.greet(); // error doesn't have greet method
 
 
-function Person(){
-    this.name="John",
-    this.age=23
+// function Person(){
+//     this.name="John",
+//     this.age=23
+// }
+
+// let person1=new Person();
+// let person2=new Person();
+
+// Person.prototype.gender='male';
+
+// console.log(person1.gender);
+// console.log(person2.gender);
+
+// const student = {
+
+//     // data property
+//     firstName: 'Monica',
+    
+//     // accessor property(getter)
+//     get getName() {
+//         return this.firstName;
+//     }
+// };
+
+// // accessing data property
+// console.log(student.firstName); // Monica
+
+// // accessing getter methods
+// console.log(student.getName); // Monica
+
+// // trying to access as a method
+// console.log(student.getName()); // error
+
+// const student = {
+//     firstName: 'Monica',
+    
+//     //accessor property(setter)
+//     set changeName(newName) {
+//         this.firstName = newName;
+//     }
+// };
+
+// console.log(student.firstName); // Monica
+
+// // change(set) object property using a setter
+// student.changeName = 'Sarah';
+
+// console.log(student.firstName); // Sarah
+
+const student = {
+    firstName: 'Monica'
 }
 
-let person1=new Person();
-let person2=new Person();
+// getting property
+Object.defineProperty(student, "getName", {
+    get : function () {
+        return this.firstName;
+    }
+});
 
-Person.prototype.gender='male';
+// setting property
+Object.defineProperty(student, "changeName", {
+    set : function (value) {
+        this.firstName = value;
+    }
+});
 
-console.log(person1.gender);
-console.log(person2.gender);
+console.log(student.firstName); // Monica
+
+// changing the property value
+student.changeName = 'Sarah';
+
+console.log(student.firstName); // Sarah
