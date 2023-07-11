@@ -608,27 +608,131 @@
 
 // console.log(student.firstName);
 
-const student = {
-    firstName: 'Monica'
+// const student = {
+//     firstName: 'Monica'
+// }
+
+// // getting property
+// Object.defineProperty(student, "getName", {
+//     get : function () {
+//         return this.firstName;
+//     }
+// });
+
+// // setting property
+// Object.defineProperty(student, "changeName", {
+//     set : function (value) {
+//         this.firstName = value;
+//     }
+// });
+
+// console.log(student.firstName); // Monica
+
+// // changing the property value
+// student.changeName = 'Sarah';
+
+// console.log(student.firstName); // Sarah
+
+// function Person(){
+//     this.name='john',
+//     this.age=22
+// }
+
+// const person1=new Person();
+// const person2=new Person();
+
+
+// function Person(){
+//     this.name='John',
+//     this.age=23
+// }
+
+// const person=new Person();
+
+// console.log(Person.prototype);
+
+// constructor function
+// function Person () {
+//     this.name = 'John',
+//     this.age = 23
+// }
+
+// // creating objects
+// const person1 = new Person();
+// const person2 = new Person();
+
+// // adding property to constructor function
+// Person.prototype.gender = 'male';
+
+// // prototype value of Person
+// console.log(Person.prototype);
+
+// // inheriting the property from prototype
+// console.log(person1.gender);
+// console.log(person2.gender);
+
+// // constructor function
+// function Person () {
+//     this.name = 'John',
+//     this.age = 23
+// }
+
+// // creating objects
+// const person1 = new Person();
+// const person2 = new Person();
+
+// // adding a method to the constructor function
+// Person.prototype.greet = function() {
+//     console.log('hello' + ' ' +  this.name);
+// }
+
+// person1.greet(); // hello John
+// person2.greet(); // hello John
+
+// constructor function
+// function Person() {
+//     this.name = 'John'
+// }
+
+// // add a property
+// Person.prototype.age = 20;
+
+// // creating an object
+// const person1 = new Person();
+
+// console.log(person1.age); // 20
+
+// // changing the property value of prototype
+// Person.prototype = { age: 50 }
+
+// // creating new object
+// const person3 = new Person();
+
+// console.log(person3.age); // 50
+// console.log(person1.age); // 20
+
+// function Person() {
+//     this.name = 'John'
+// }
+
+// // adding property 
+// Person.prototype.name = 'Peter';
+// Person.prototype.age = 23
+
+// const person1 = new Person();
+
+// console.log(person1.name); // John
+// console.log(person1.age); // 23
+
+function Person () {
+    this.name = 'John'
 }
 
-// getting property
-Object.defineProperty(student, "getName", {
-    get : function () {
-        return this.firstName;
-    }
-});
+// adding a prototype
+Person.prototype.age = 24;
 
-// setting property
-Object.defineProperty(student, "changeName", {
-    set : function (value) {
-        this.firstName = value;
-    }
-});
+// creating object
+const person = new Person();
 
-console.log(student.firstName); // Monica
-
-// changing the property value
-student.changeName = 'Sarah';
-
-console.log(student.firstName); // Sarah
+// accessing prototype property
+console.log(person.__proto__);   // { age: 24 }
