@@ -724,15 +724,122 @@
 // console.log(person1.name); // John
 // console.log(person1.age); // 23
 
-function Person () {
-    this.name = 'John'
-}
+// function Person () {
+//     this.name = 'John'
+// }
 
-// adding a prototype
-Person.prototype.age = 24;
+// // adding a prototype
+// Person.prototype.age = 24;
 
-// creating object
-const person = new Person();
+// // creating object
+// const person = new Person();
 
-// accessing prototype property
-console.log(person.__proto__);   // { age: 24 }
+// // accessing prototype property
+// console.log(person.__proto__);   // { age: 24 }
+
+// const num=[1,2,4,24,5,44,54,33];
+// const str=['Hello','world','welcome'];
+// const mix=[22,'hello',43,12,'world'];
+
+// console.log(num);
+// console.log(str);
+// console.log(mix);
+
+// const arry1=[22,23];
+// const arry2=new Array(24,25);
+// console.log(arry1);
+// console.log(arry2);
+
+// // empty array
+// const myList = [ ];
+
+// // array of numbers
+// const numberArray = [ 2, 4, 6, 8];
+
+// // array of strings
+// const stringArray = [ 'eat', 'work', 'sleep'];
+
+// // array with mixed data types
+// const newData = ['work', 'exercise', 1, true];
+
+// const newData=[
+//     {'task1':'exercise'},
+//     [1,2,3],
+//     function hello(){console.log('hello');}
+// ]
+// console.log(newData);
+
+// const myArray = ['h', 'e', 'l', 'l', 'o'];
+
+// console.log(myArray[0]);
+// console.log(myArray[1]);
+
+// let dailyActivities = ['eat', 'sleep'];
+// dailyActivities.push('exercise');
+// console.log(dailyActivities);
+
+// let dailyActivities = ['eat', 'sleep'];
+// dailyActivities.unshift('exercise');
+// console.log(dailyActivities);
+
+// let dailyActivities = ['eat', 'sleep'];
+// let popedItem=dailyActivities.pop();
+// console.log(dailyActivities);
+// console.log(popedItem);
+
+// let dailyActivities = ['eat', 'sleep'];
+// let shiftedItem=dailyActivities.shift();
+// console.log(dailyActivities);
+// console.log(shiftedItem);
+
+// let dailyActivities = [ 'eat', 'sleep'];
+
+// // this will add the new element 'exercise' at the 2 index
+// dailyActivities[2] = 'exercise';
+
+// console.log(dailyActivities); // ['eat', 'sleep', 'exercise']
+
+// let dailyActivities = [ 'eat', 'sleep'];
+
+// // this will add the new element 'exercise' at the 3 index
+// dailyActivities[3] = 'exercise';
+
+// console.log(dailyActivities); // ["eat", "sleep", undefined, "exercise"]
+
+// const dailyActivities = [ 'eat', 'sleep'];
+
+// console.log(dailyActivities.length);
+
+// let dailyActivities = ['sleep', 'work', 'exercise']
+// let newRoutine = ['eat'];
+
+// // sorting elements in the alphabetical order
+// dailyActivities.sort();
+// console.log(dailyActivities); // ['exercise', 'sleep', 'work']
+
+// //finding the index position of string
+// const position = dailyActivities.indexOf('work');
+// console.log(position); // 2
+
+// // slicing the array elements
+// const newDailyActivities = dailyActivities.slice(1);
+// console.log(newDailyActivities); // [ 'sleep', 'work']
+
+// // concatenating two arrays
+// const routine = dailyActivities.concat(newRoutine);
+// console.log(routine); // ["exercise", "sleep", "work", "eat"]
+
+// let arr1=[2,33,44];
+// let arr2=arr1;
+
+// // arr2.push('hello');
+// arr1.push('hello')
+// console.log(arr1);
+// console.log(arr2);
+
+let arr = ['h', 'e'];
+arr.name = 'John';
+
+console.log(arr); // ["h", "e"]
+console.log(arr.name); // "John"
+console.log(arr['name']); // "John"
