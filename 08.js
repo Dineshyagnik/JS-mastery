@@ -837,9 +837,74 @@
 // console.log(arr1);
 // console.log(arr2);
 
-let arr = ['h', 'e'];
-arr.name = 'John';
+// let arr = ['h', 'e'];
+// arr.name = 'John';
 
-console.log(arr); // ["h", "e"]
-console.log(arr.name); // "John"
-console.log(arr['name']); // "John"
+// console.log(arr); // ["h", "e"]
+// console.log(arr.name); // "John"
+// console.log(arr['name']); // "John"
+
+// let studentsData = [['Jack', 24], ['Sara', 23], ['Peter', 24]];
+// console.log(studentsData);
+
+// let student1 = ['Jack', 24];
+// let student2 = ['Sara', 23];
+// let student3 = ['Peter', 24];
+
+// // multidimensional array
+// let studentsData = [student1, student2, student3];
+// console.log(studentsData);
+
+// let x = [
+//     ['Jack', 24],
+//     ['Sara', 23], 
+//     ['Peter', 24]
+//     ];
+    
+//     // access the first item 
+//     console.log(x[0]); // ["Jack", 24]
+    
+//     // access the first item of the first inner array
+//     console.log(x[0][0]); // Jack
+    
+//     // access the second item of the third inner array
+//     console.log(x[2][1]); // 24
+
+// let studentsData = [['Jack', 24], ['Sara', 23],];
+// studentsData.push(['Peter', 24]);
+
+// console.log(studentsData); //[["Jack", 24], ["Sara", 23], ["Peter", 24]
+
+// // using index notation
+// let studentsData = [['Jack', 24], ['Sara', 23],];
+// studentsData[1][2] = 'hello';
+
+// console.log(studentsData); // [["Jack", 24], ["Sara", 23, "hello"]]
+
+// // using push()
+// let studentsData = [['Jack', 24], ['Sara', 23],];
+// studentsData[1].push('hello');
+
+// console.log(studentsData); // [["Jack", 24], ["Sara", 23, "hello"]]
+
+// let studentsData = [['Jack', 24], ['Sara', 23],];
+
+// // adding element at 1 index
+// studentsData.splice(1, 0, ['Peter', 24]);
+
+// console.log(studentsData); // [["Jack", 24], ["Peter", 24], ["Sara", 23]]
+
+
+// // remove the array element from outer array
+// let studentsData = [['Jack', 24], ['Sara', 23],];
+// studentsData.pop();
+
+// console.log(studentsData); // [["Jack", 24]]
+
+
+// // remove the element from the inner array
+// let studentsData = [['Jack', 24], ['Sara', 23]];
+// studentsData[0].pop();
+
+// console.log(studentsData); // [["Jack", 24], ["Sara"]]
+
