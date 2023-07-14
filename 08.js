@@ -908,3 +908,53 @@
 
 // console.log(studentsData); // [["Jack", 24], ["Sara"]]
 
+// //strings example
+// const name = 'Peter';
+// const name1 = "Jack";
+// const result = `The names are ${name} and ${name1}`;
+
+
+// let a = 'hello';
+// a[0] = 'H';
+// console.log(a); // "hello"
+
+// let a = 'hello';
+// a = 'Hello';
+// console.log(a); // "Hello"
+
+// const a = 'a';
+// const b = 'A'
+// console.log(a === b); // false
+
+// const a = 'hello';
+// const b = new String('hello');
+
+// console.log(a); // "hello"
+// console.log(b); // "hello"
+
+// console.log(typeof a); // "string"
+// console.log(typeof b); // "object"
+
+const text1 = 'hello';
+const text2 = 'world';
+const text3 = '     JavaScript    ';
+
+// concatenating two strings
+const result1 = text1.concat(' ', text2);
+console.log(result1); // "hello world"
+
+// converting the text to uppercase
+const result2 = text1.toUpperCase();
+console.log(result2); // HELLO
+
+// removing whitespace from the string
+const result3 = text3.trim();
+console.log(result3); // JavaScript
+
+// converting the string to an array
+const result4 = text1.split();
+console.log(result4); // ["hello"]
+
+// slicing the string
+const result5= text1.slice(1, 3);
+console.log(result5); // "el"
