@@ -1007,9 +1007,106 @@
 // }
 
 // define array
-const arr = [ 'hello', 1, 'JavaScript' ];
+// const arr = [ 'hello', 1, 'JavaScript' ];
 
-// using for...in loop
-for (let x in arr) {
-    console.log(arr[x]);
-}
+// // using for...in loop
+// for (let x in arr) {
+//     console.log(arr[x]);
+// }
+
+// const a = 3;
+// const b = 3.13;
+
+
+// const a = 0xff;
+// console.log(a); // 255
+
+// const b = 0x00 ;
+// console.log(b); // 0
+
+
+// const a = 4 + 9;
+// console.log(a); // 13
+
+// const a = '4' + 9;
+// console.log(a); // 49
+
+
+// const a = '4' - 2;
+// console.log(a); // 2
+
+// const a = '4' / 2;
+// console.log(a); // 2
+
+// const a = '4' * 2;
+// console.log(a); // 8
+
+// const a = 4 - 'hello';
+// console.log(a); // NaN
+
+// const a = isNaN(9);
+// console.log(a); // false
+
+// const a = isNaN(4 - 'hello');
+// console.log(a); // true
+
+// const a = 4 - 'hello';
+// console.log(a); // NaN
+// console.log(typeof a); // "number"
+
+// const a = 2 / 0;
+// console.log(a); // Infinity
+
+// const a = -2 / 0;
+// console.log(a); // -Infinity
+
+
+// BigInt value
+// const value = 900719925124740998n;
+
+// // Adding two big integers
+// const value1 = value + 1n;
+// console.log(value1); // returns "900719925124740999n"
+
+// const a = 45;
+
+// // creating a number object
+// const b = new Number(45);
+
+// console.log(a); // 45
+// console.log(b); // 45
+
+// console.log(typeof a); // "number"
+// console.log(typeof b); // "object"
+
+
+// // check if a is integer
+// const a = 12;
+// console.log(Number.isInteger(a)); // true
+
+// // check if b is NaN
+// const b = NaN;
+// console.log(Number.isNaN(b)); // true
+
+// // display upto two decimal point
+// const d = 5.1234;
+// console.log(d.toFixed(2)); // 5.12
+
+
+// // largest possible value
+// const a = Number.MAX_VALUE;
+// console.log(a); // 1.7976931348623157e+308
+
+// // maximum safe integer
+// const a = Number.MAX_SAFE_INTEGER;
+// console.log(a); // 9007199254740991
+
+const a = '23'; // string
+const b = true; // boolean
+
+//converting to number
+const result1 = Number(a);
+const result2 = Number(b);
+
+console.log(result1); // 23
+console.log(result2); // 1
