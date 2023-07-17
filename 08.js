@@ -1101,12 +1101,61 @@
 // const a = Number.MAX_SAFE_INTEGER;
 // console.log(a); // 9007199254740991
 
-const a = '23'; // string
-const b = true; // boolean
+// const a = '23'; // string
+// const b = true; // boolean
 
-//converting to number
-const result1 = Number(a);
-const result2 = Number(b);
+// //converting to number
+// const result1 = Number(a);
+// const result2 = Number(b);
 
-console.log(result1); // 23
-console.log(result2); // 1
+// console.log(result1); // 23
+// console.log(result2); // 1
+
+// two symbols with the same description
+
+// const value1 = Symbol('hello');
+// const value2 = Symbol('hello');
+
+// console.log(value1 === value2); // false
+
+
+// const x = Symbol('hey');
+// console.log(x.description); // hey
+
+// let id = Symbol("id");
+
+// let person = {
+//     name: "Jack",
+
+//     // adding symbol as a key
+//     [id]: 123 // not "id": 123
+// };
+
+// console.log(person); // {name: "Jack", Symbol(id): 123}
+
+// let id = Symbol("id");
+
+// let person = {
+//     name: "Jack",
+//     age: 25,
+//     [id]: 12
+// };
+
+// // using for...in
+// for (let key in person) {
+//     console.log(key);
+// }
+
+const x = Symbol('hey');
+
+// description property
+console.log(x.description); // hey
+
+const stringArray = ['a', 'b', 'c'];
+const numberArray = [1, 2, 3];
+
+// isConcatSpreadable property
+numberArray[Symbol.isConcatSpreadable] = false;
+
+let result = stringArray.concat(numberArray);
+console.log(result); // ["a", "b", "c", [1, 2, 3]]
