@@ -1146,16 +1146,46 @@
 //     console.log(key);
 // }
 
-const x = Symbol('hey');
+// const x = Symbol('hey');
 
-// description property
-console.log(x.description); // hey
+// // description property
+// console.log(x.description); // hey
 
-const stringArray = ['a', 'b', 'c'];
-const numberArray = [1, 2, 3];
+// const stringArray = ['a', 'b', 'c'];
+// const numberArray = [1, 2, 3];
 
-// isConcatSpreadable property
-numberArray[Symbol.isConcatSpreadable] = false;
+// // isConcatSpreadable property
+// numberArray[Symbol.isConcatSpreadable] = false;
 
-let result = stringArray.concat(numberArray);
-console.log(result); // ["a", "b", "c", [1, 2, 3]]
+// let result = stringArray.concat(numberArray);
+// console.log(result); // ["a", "b", "c", [1, 2, 3]]
+
+
+// program to show try...catch in a program
+
+// const numerator= 100, denominator = 'a';
+
+// try {
+//      console.log(numerator/denominator);
+
+//     // forgot to define variable a      
+//     console.log(a);
+// }
+// catch(error) {
+//     console.log('An error caught'); 
+//     console.log('Error message: ' + error);  
+// }
+
+const numerator= 100, denominator = 'a';
+
+try {
+     console.log(numerator/denominator);
+     console.log(a);
+}
+catch(error) {
+    console.log('An error caught'); 
+    console.log('Error message: ' + error);  
+}
+finally {
+     console.log('Finally will execute every time');
+}
