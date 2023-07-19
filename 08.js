@@ -1209,23 +1209,113 @@
 //     console.log('Error message: ' + error);  
 // }
 
-const number = 5;
-try {
-     // user-defined throw statement
-     throw new Error('This is the throw');
+// const number = 5;
+// try {
+//      // user-defined throw statement
+//      throw new Error('This is the throw');
 
-}
-catch(error) {
-    console.log('An error caught');
-    if( number + 8 > 10) {
+// }
+// catch(error) {
+//     console.log('An error caught');
+//     if( number + 8 > 10) {
 
-        // statements to handle exceptions
-         console.log('Error message: ' + error); 
-        console.log('Error resolved');
-    }
-    else {
-        // cannot handle the exception
-        // rethrow the exception
-        throw new Error('The value is low');
-    }
-}
+//         // statements to handle exceptions
+//          console.log('Error message: ' + error); 
+//         console.log('Error resolved');
+//     }
+//     else {
+//         // cannot handle the exception
+//         // rethrow the exception
+//         throw new Error('The value is low');
+//     }
+// }
+
+
+// // variable declared using let
+// let name = 'Sara';
+// {
+//     // can be accessed only inside
+//     let name = 'Peter';
+
+//     console.log(name); // Peter
+// }
+// console.log(name); // Sara 
+
+// class Person{
+//     constructor(name){
+//         this.name=name;
+//     }
+// }
+
+// const person1=new Person('john');
+// console.log(person1.name);
+
+// function sum(x,y=5){
+//     console.log(x+y);
+// }
+// sum(5);
+// sum(20,20)
+
+
+// const first_name='jack';
+// const last_name='sparrow';
+
+// console.log('Hello ' + first_name +' '+ last_name);
+
+// const firstName='jack';
+// const lastName='sparrow';
+// const fullName=`My first name is ${firstName} and last name is ${lastName}`;
+// console.log(`Hello ${firstName} ${lastName}`);
+// console.log(fullName);
+
+// const person = {
+//     name:'jack',
+//     age:22,
+//     gender:'male'
+// }
+
+// let name=person.name;
+// let age=person.age;
+// let gender=person.gender;
+
+// console.log(name);
+// console.log(age);
+// console.log(gender);
+
+// const person={
+//     name:'jack',
+//     age:11,
+//     gender:'male'
+// }
+
+// let {name,age,gender}=person;
+
+// console.log(name);
+// console.log(gender);
+// console.log(age);
+
+// let countValue=new Promise(function(resolve,reject){
+//     reject('Promise rejected');
+// });
+
+// countValue.then(
+//     function successfulValue(result){
+//         console.log(result);
+//     }
+// );
+
+// function show(a,b,...arg){
+//     console.log(a);
+//     console.log(b);
+//     console.log(arg);
+// };
+// show('one','two','three','four','five','six');
+
+
+let arr1=['one','two'];
+// let arr2=[...arr1,'three','four','five'];
+// console.log(arr2);
+let arr2=['three','four','five'];
+
+let arr3=[...arr1,...arr2];
+console.log(arr3);
