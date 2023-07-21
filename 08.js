@@ -1383,15 +1383,44 @@
 // const x = new Person();
 // x.sayName();
 
-let person = {
-    name: 'Jack',
-    age: 25,
-    sayName: () => {
+// let person = {
+//     name: 'Jack',
+//     age: 25,
+//     sayName: () => {
 
-        // this refers to the global .....
-        //
-        console.log(this.age);
-    }
-}
+//         // this refers to the global .....
+//         //
+//         console.log(this.age);
+//     }
+// }
 
-person.sayName(); // undefined
+// person.sayName(); // undefined
+
+// function sum(x = 3, y = 5) {
+
+//     // return sum
+//     return x + y;
+// }
+
+// console.log(sum(5, 15));  // 20 
+// console.log(sum(7));        // 12
+// console.log(sum());          // 8
+
+// using a function in default value expression
+
+// const sum = () => 15;
+
+// const calculate = function( x, y = x * sum() ) {
+//     return x + y;
+// }
+
+// const result = calculate(10);
+// console.log(result);            // 160
+
+function test(x = 1) {
+    console.log(x);
+  }
+  
+  // passing undefined
+  // takes default value 1
+  test(undefined); // 1
