@@ -1417,10 +1417,67 @@
 // const result = calculate(10);
 // console.log(result);            // 160
 
-function test(x = 1) {
-    console.log(x);
-  }
+// function test(x = 1) {
+//     console.log(x);
+//   }
   
-  // passing undefined
-  // takes default value 1
-  test(undefined); // 1
+//   // passing undefined
+//   // takes default value 1
+//   test(undefined); // 1
+
+// const name = 'Jack';
+// console.log(`Hello ${name}!`); // Hello Jack!
+
+// const str1 = 'This is a string';
+
+// // cannot use the same quotes
+// const str2 = 'A "quote" inside a string';  // valid code
+// const str3 = 'A 'quote' inside a string';  // Error
+
+// const str4 = "Another 'quote' inside a string"; // valid code
+// const str5 = "Another "quote" inside a string"; // Error
+
+// // escape characters using \
+// const str3 = 'A \'quote\' inside a string';  // valid code
+// const str5 = "Another \"quote\" inside a string"; // valid code
+
+// // using the + operator
+// const message1 = 'This is a long message\n' + 
+// 'that spans across multiple lines\n' + 
+// 'in the code.'
+
+// console.log(message1)
+
+// const message1 = `This is a long message
+// that spans across multiple lines
+// in the code.`
+
+// console.log(message1)
+
+// const name = 'Jack';
+// console.log(`Hello ${name}`); 
+
+// const result = 4 + 5;
+
+// // template literals used with expressions
+// console.log(`The sum of 4 + 5 is ${result}`);
+
+// console.log(`${result < 10 ? 'Too low': 'Very high'}`)
+
+const name = 'Jack';
+const greet = true;
+
+function tagExample(strings, nameValue) {
+    let str0 = strings[0]; // Hello
+    let str1 = strings[1]; // , How are you?
+
+    if(greet) {
+        return `${str0}${nameValue}${str1}`;
+    }
+}
+
+// creating tagged literal
+// passing argument name
+const result = tagExample`Hello ${name}, How are you?`;
+
+console.log(result);
