@@ -1536,10 +1536,129 @@
 // func(3); // [3]
 // func(4, 5, 6); // [4, 5, 6]
 
-function sum(x, y ,z) {
-    console.log(x + y + z);
-}
+// function sum(x, y ,z) {
+//     console.log(x + y + z);
+// }
 
-const num1 = [1, 3, 4, 5];
+// const num1 = [1, 3, 4, 5];
 
-sum(...num1); // 8
+// sum(...num1); // 8
+
+// // create a set
+// let map1 = new Map();
+
+// // insert key-value pair
+// map1.set('info', {name: 'Jack', age: 26});
+// console.log(map1); // Map {"info" => {name: "Jack", age: 26}}
+
+// // Map with object key
+// let map2 = new Map();
+
+// let obj = {};
+// map2.set(obj, {name: 'Jack', age: "26"});
+
+// console.log(map2); // Map {{} => {name: "Jack", age: "26"}}
+
+// let map1 = new Map();
+// map1.set('info', {name: 'Jack', age: "26"});
+
+// // access the elements of a Map
+// console.log(map1.get('info')); // {name: "Jack", age: "26"}
+
+// const set1 = new Set([1, 2, 3]);
+
+// let map1 = new Map();
+// map1.set('info', {name: 'Jack', age: "26"});
+
+// // check if an element is in Set
+// console.log(map1.has('info')); // true
+
+// let map1 = new Map();
+// map1.set('info', {name: 'Jack', age: "26"});
+
+// // removing a particular element
+// map1.delete('address'); // false
+// console.log(map1); // Map {"info" => {name: "Jack", age: "26"}} 
+
+// map1.delete('info'); // true
+// console.log(map1); // Map {}
+
+// let map1 = new Map();
+// map1.set('info', {name: 'Jack', age: "26"});
+
+// // removing all element
+// map1.clear();
+// console.log(map1); // Map {}
+
+// let map1 = new Map();
+// map1.set('info', {name: 'Jack', age: "26"});
+
+// console.log(map1.size); // 1
+
+// let map1 = new Map();
+// map1.set('name', 'Jack');
+// map1.set('age', '27');
+
+// // looping through Map
+// for (let [key, value] of map1) {
+//     console.log(key + '- ' + value);
+// }
+
+
+// let map1 = new Map();
+// map1.set('name', 'Jack');
+// map1.set('age', '27');
+
+// // looping through the Map
+// for (let key of map1.keys()) {
+//   console.log(key)
+// }
+
+// let map1 = new Map();
+// map1.set('name', 'Jack');
+// map1.set('age', '27');
+
+// // looping through the Map
+// for (let values of map1.values()) {
+//     console.log(values);
+// }
+
+// let map1 = new Map();
+// map1.set('name', 'Jack');
+// map1.set('age', '27');
+
+// // looping through the Map
+// for (let elem of map1.entries()) {
+//     console.log(`${elem[0]}: ${elem[1]}`);
+// }
+
+// const weakMap = new WeakMap();
+// console.log(weakMap); // WeakMap {} 
+
+// let obj = {};
+
+// // adding object (element) to WeakMap
+// weakMap.set(obj, 'hello');
+
+// console.log(weakMap); // WeakMap {{} => "hello"}
+
+const weakMap = new WeakMap();
+console.log(weakMap); // WeakMap {} 
+
+let obj = {};
+
+// adding object (element) to WeakMap
+weakMap.set(obj, 'hello');
+
+console.log(weakMap); // WeakMap {{} => "hello"}
+
+// get the element of a WeakMap
+console.log(weakMap.get(obj)); // hello
+
+// check if an element is present in WeakMap
+console.log(weakMap.has(obj)); // true
+
+// delete the element of WeakMap
+console.log(weakMap.delete(obj)); // true
+
+console.log(weakMap); // WeakMap {} 
