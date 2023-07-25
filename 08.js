@@ -1642,23 +1642,127 @@
 
 // console.log(weakMap); // WeakMap {{} => "hello"}
 
-const weakMap = new WeakMap();
-console.log(weakMap); // WeakMap {} 
+// const weakMap = new WeakMap();
+// console.log(weakMap); // WeakMap {} 
 
-let obj = {};
+// let obj = {};
 
-// adding object (element) to WeakMap
-weakMap.set(obj, 'hello');
+// // adding object (element) to WeakMap
+// weakMap.set(obj, 'hello');
 
-console.log(weakMap); // WeakMap {{} => "hello"}
+// console.log(weakMap); // WeakMap {{} => "hello"}
 
-// get the element of a WeakMap
-console.log(weakMap.get(obj)); // hello
+// // get the element of a WeakMap
+// console.log(weakMap.get(obj)); // hello
 
-// check if an element is present in WeakMap
-console.log(weakMap.has(obj)); // true
+// // check if an element is present in WeakMap
+// console.log(weakMap.has(obj)); // true
 
-// delete the element of WeakMap
-console.log(weakMap.delete(obj)); // true
+// // delete the element of WeakMap
+// console.log(weakMap.delete(obj)); // true
 
-console.log(weakMap); // WeakMap {} 
+// console.log(weakMap); // WeakMap {} 
+
+
+// // create Set
+// const set1 = new Set(); // an empty set
+// console.log(set1); // Set {}
+
+// // Set with multiple types of value
+// const set2 = new Set([1, 'hello', {count : true}]);
+// console.log(set2); // Set {1, "hello", {count: true}}
+
+// // Set with duplicate values
+// const set3 = new Set([1, 1, 2, 2]);
+// console.log(set3); // Set {1, 2}
+
+// const set1 = new Set([1, 2, 3]);
+
+// // access the elements of a Set
+// console.log(set1.values()); // Set Iterator [1, 2, 3]
+
+
+// const set1 = new Set([1, 2, 3]);
+
+// // check if an element is in Set
+// console.log(set1.has(1));
+
+// const set = new Set([1, 2]);
+// console.log(set.values());
+
+// // adding new elements
+// set.add(3);
+// console.log(set.values());
+
+// // adding duplicate elements
+// // does not add to Set
+// set.add(1);
+// console.log(set.values());
+
+// const set = new Set([1, 2, 3]);
+// console.log(set.values()); // Set Iterator [1, 2, 3]
+
+// // removing a particular element
+// set.delete(2);
+// console.log(set.values()); // Set Iterator [1, 3]
+
+// const set = new Set([1, 2, 3]);
+// console.log(set.values()); // Set Iterator [1, 2, 3]
+
+// // remove all elements of Set
+// set.clear();
+// console.log(set.values()); // Set Iterator []
+
+// const set = new Set([1, 2, 3]);
+
+// // looping through Set
+// for (let i of set) {
+//     console.log(i);
+// }
+
+// const weakSet = new WeakSet();
+// console.log(weakSet); // WeakSet {}
+
+// let obj = {
+//     message: 'Hi',
+//     sendMessage: true
+// }
+
+// // adding object (element) to WeakSet
+// weakSet.add(obj);
+
+// console.log(weakSet); // WeakSet {{message: "Hi", sendMessage: true}}
+
+// const weakSet = new WeakSet();
+// console.log(weakSet); // WeakSet {}
+
+// const obj = {a:1};
+
+// // add to a weakSet
+// weakSet.add(obj);
+// console.log(weakSet); // WeakSet {{a: 1}}
+
+// // check if an element is in Set
+// console.log(weakSet.has(obj)); // true
+
+// // delete elements
+// weakSet.delete(obj);
+// console.log(weakSet); // WeakSet {}
+
+// perform union operation
+// contain elements of both sets
+function union(a, b) {
+    let unionSet = new Set(a);
+    for (let i of b) {
+        unionSet.add(i);
+    }
+    return unionSet
+}
+
+// two sets of fruits
+let setA = new Set(['apple', 'mango', 'orange']);
+let setB = new Set(['grapes', 'apple', 'banana']);
+
+let result = union(setA, setB);
+
+console.log(result);
