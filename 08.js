@@ -1751,18 +1751,33 @@
 
 // perform union operation
 // contain elements of both sets
-function union(a, b) {
-    let unionSet = new Set(a);
-    for (let i of b) {
-        unionSet.add(i);
-    }
-    return unionSet
+// function union(a, b) {
+//     let unionSet = new Set(a);
+//     for (let i of b) {
+//         unionSet.add(i);
+//     }
+//     return unionSet
+// }
+
+// // two sets of fruits
+// let setA = new Set(['apple', 'mango', 'orange']);
+// let setB = new Set(['grapes', 'apple', 'banana']);
+
+// let result = union(setA, setB);
+
+// console.log(result);
+
+// assigning object attributes to variables
+const person = {
+    name: 'Sara',
+    age: 25,
+    gender: 'female'    
 }
 
-// two sets of fruits
-let setA = new Set(['apple', 'mango', 'orange']);
-let setB = new Set(['grapes', 'apple', 'banana']);
+let name = person.name;
+let age = person.age;
+let gender = person.gender;
 
-let result = union(setA, setB);
-
-console.log(result);
+console.log(name); // Sara
+console.log(age); // 25
+console.log(gender); // female
