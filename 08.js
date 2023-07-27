@@ -1767,17 +1767,156 @@
 
 // console.log(result);
 
-// assigning object attributes to variables
+// // assigning object attributes to variables
+// const person = {
+//     name: 'Sara',
+//     age: 25,
+//     gender: 'female'    
+// }
+
+// let name = person.name;
+// let age = person.age;
+// let gender = person.gender;
+
+// console.log(name); // Sara
+// console.log(age); // 25
+// console.log(gender); // female
+
+// // assigning object attributes to variables
+// const person = {
+//     name: 'Sara',
+//     age: 25,
+//     gender: 'female'    
+// }
+
+// // destructuring assignment
+// let { name, age, gender } = person;
+
+// console.log(name); // Sara
+// console.log(age); // 25
+// console.log(gender); // female
+
+// const person = {
+//     name: 'Sara',
+//     age: 25,
+//     gender: 'female'    
+// }
+
+// // destructuring assignment
+// // using different variable names
+// let { name: name1, age: age1, gender:gender1 } = person;
+
+// console.log(name1); // Sara
+// console.log(age1); // 25
+// console.log(gender1); // female
+
+// const arrValue = ['one', 'two', 'three'];
+
+// // destructuring assignment in arrays
+// const [x, y, z] = arrValue;
+
+// console.log(x); // one
+// console.log(y); // two
+// console.log(z); // three
+
+// let arrValue = [10];
+
+// // assigning default value 5 and 7
+// let [x = 5,  y = 7] = arrValue;
+
+// console.log(x); // 10
+// console.log(y); // 7
+
+// const person = {
+//     name: 'Jack',
+// }
+
+// // assign default value 26 to age if undefined
+// const { name, age = 26} = person;
+
+// console.log(name); // Jack
+// console.log(age); // 26
+
+// program to swap variables
+
+// let x = 4;
+// let y = 7;
+
+// // swapping variables
+// [x, y] = [y, x];
+
+// console.log(x); // 7
+// console.log(y); // 4
+
+// const arrValue = ['one', 'two', 'three'];
+
+// // destructuring assignment in arrays
+// const [x, , z] = arrValue;
+
+// console.log(x); // one
+// console.log(z); // three
+
+
+// const arrValue = ['one', 'two', 'three', 'four'];
+
+// // destructuring assignment in arrays
+// // assigning remaining elements to y
+// const [x, ...y] = arrValue;
+
+// console.log(x); // one
+// console.log(y); // ["two", "three", "four"]
+
+// const person = {
+//     name: 'Sara',
+//     age: 25,
+//     gender: 'female'    
+// }
+
+// // destructuring assignment
+// // assigning remaining properties to rest
+// let { name, ...rest } = person;
+
+// console.log(name); // Sara
+// console.log(rest); // {age: 25, gender: "female"}
+
+
+// const arrValue = ['one', 'two', 'three', 'four'];
+// const arr2=[1,23,54,67]
+
+// const arr3=[...arrValue, ...arr2]
+
+// console.log(arr3); 
+// // console.log(y); 
+
+// const arrValue = ['one', 'two', 'three', 'four'];
+
+// // throws an error
+// const [ ...x, y] = arrValue;
+
+// console.log(x); // eror
+
+
+// nested array elements
+// const arrValue = ['one', ['two', 'three']];
+
+// // nested destructuring assignment in arrays
+// const [x, [y, z]] = arrValue;
+
+// console.log(x); // one
+// console.log(y); // two
+// console.log(z); // three
+
 const person = {
-    name: 'Sara',
-    age: 25,
-    gender: 'female'    
+    name: 'Jack',
+    age: 26,
+    hobbies: {
+        read: true,
+        playGame: true
+    }
 }
+// nested destructuring 
+const {name, hobbies: {read, playGame}} = person;
 
-let name = person.name;
-let age = person.age;
-let gender = person.gender;
-
-console.log(name); // Sara
-console.log(age); // 25
-console.log(gender); // female
+console.log(name); // Jack
+console.log(read); // true
+console.log(playGame); // true
