@@ -1906,17 +1906,32 @@
 // console.log(y); // two
 // console.log(z); // three
 
-const person = {
-    name: 'Jack',
-    age: 26,
-    hobbies: {
-        read: true,
-        playGame: true
-    }
-}
-// nested destructuring 
-const {name, hobbies: {read, playGame}} = person;
+// const person = {
+//     name: 'Jack',
+//     age: 26,
+//     hobbies: {
+//         read: true,
+//         playGame: true
+//     }
+// }
+// // nested destructuring 
+// const {name, hobbies: {read, playGame}} = person;
 
-console.log(name); // Jack
-console.log(read); // true
-console.log(playGame); // true
+// console.log(name); // Jack
+// console.log(read); // true
+// console.log(playGame); // true
+
+
+// creating a class
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+// creating an object
+const person1 = new Person('John');
+const person2 = new Person('Jack');
+
+console.log(person1.name); // John
+console.log(person2.name); // Jack
