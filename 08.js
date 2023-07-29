@@ -1923,15 +1923,59 @@
 
 
 // creating a class
+// class Person {
+//   constructor(name) {
+//     this.name = name;
+//   }
+// }
+
+// // creating an object
+// const person1 = new Person('John');
+// const person2 = new Person('Jack');
+
+// console.log(person1.name); // John
+// console.log(person2.name); // Jack
+
+
+// class Person {
+//   constructor(name) {
+//   this.name = name;
+// }
+
+//   // defining method
+//   greet() {
+//       console.log(`Hello ${this.name}`);
+//   }
+// }
+
+// let person1 = new Person('John');
+
+// // accessing property
+// console.log(person1.name); // John
+
+// // accessing method
+// person1.greet(); // Hello John
+
+
 class Person {
   constructor(name) {
-    this.name = name;
+      this.name = name;
+  }
+
+  // getter
+  get personName() {
+      return this.name;
+  }
+
+  // setter
+  set personName(x) {
+      this.name = x;
   }
 }
 
-// creating an object
-const person1 = new Person('John');
-const person2 = new Person('Jack');
+let person1 = new Person('Jack');
+console.log(person1.name); // Jack
 
-console.log(person1.name); // John
-console.log(person2.name); // Jack
+// changing the value of name property
+person1.personName = 'Sarah';
+console.log(person1.name); // Sarah
