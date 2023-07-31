@@ -1982,25 +1982,45 @@
 
 
 
-class Person {
+// class Person {
+//     constructor(name) {
+//         this.name = name;
+//     }
+  
+//     // getter
+//     get personName() {
+//         return this.name;
+//     }
+  
+//     // setter
+//     set personName(x) {
+//         this.name = x;
+//     }
+//   }
+  
+//   let person1 = new Person('Jack');
+//   console.log(person1.name); // Jack
+  
+//   // changing the value of name property
+//   person1.personName = 'Sarah';
+//   console.log(person1.name); // Sarah
+
+
+// parent class
+class Person { 
     constructor(name) {
         this.name = name;
     }
-  
-    // getter
-    get personName() {
-        return this.name;
+
+    greet() {
+        console.log(`Hello ${this.name}`);
     }
-  
-    // setter
-    set personName(x) {
-        this.name = x;
-    }
-  }
-  
-  let person1 = new Person('Jack');
-  console.log(person1.name); // Jack
-  
-  // changing the value of name property
-  person1.personName = 'Sarah';
-  console.log(person1.name); // Sarah
+}
+
+// inheriting parent class
+class Student extends Person {
+
+}
+
+let student1 = new Student('Jack');
+student1.greet();
