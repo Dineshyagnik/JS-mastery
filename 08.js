@@ -2053,37 +2053,121 @@
 // let student1 = new Student('Jack');
 // student1.greet();
 
-// parent class
-class Person { 
-    constructor(name) {
-        this.name = name;
-        this.occupation = "unemployed";
-    }
+// // parent class
+// class Person { 
+//     constructor(name) {
+//         this.name = name;
+//         this.occupation = "unemployed";
+//     }
     
-    greet() {
-        console.log(`Hello ${this.name}.`);
-    }
+//     greet() {
+//         console.log(`Hello ${this.name}.`);
+//     }
  
-}
+// }
 
-// inheriting parent class
-class Student extends Person {
+// // inheriting parent class
+// class Student extends Person {
 
-    constructor(name) {
+//     constructor(name) {
         
-        // call the super class constructor and pass in the name parameter
-        super(name);
+//         // call the super class constructor and pass in the name parameter
+//         super(name);
         
-        // Overriding an occupation property
-        this.occupation = 'Student';
-    }
+//         // Overriding an occupation property
+//         this.occupation = 'Student';
+//     }
     
-    // overriding Person's method
-    greet() {
-        console.log(`Hello student ${this.name}.`);
-        console.log('occupation: ' + this.occupation);
-    }
+//     // overriding Person's method
+//     greet() {
+//         console.log(`Hello student ${this.name}.`);
+//         console.log('occupation: ' + this.occupation);
+//     }
+// }
+
+// let p = new Student('Jack');
+// p.greet();
+
+
+// // array
+// const students = ['John', 'Sara', 'Jack'];
+
+// // using for...of
+// for ( let element of students ) {
+
+//     // display the values
+//     console.log(element);
+// }
+
+// // string
+// const string = 'code';
+
+// // using for...of loop
+// for (let i of string) {
+//     console.log(i);
+// }
+
+
+// // define Set
+// const set = new Set([1, 2, 3]);
+
+// // looping through Set
+// for (let i of set) {
+//     console.log(i);
+// }
+
+// // define Map
+// let map = new Map();
+
+// // inserting elements
+// map.set('name', 'Jack');
+// map.set('age', '27');
+
+// // looping through Map
+// for (let [key, value] of map) {
+//     console.log(key + '- ' + value);
+// }
+
+// // creating iterable object
+// const iterableObj = {
+
+//     // iterator method
+//     [Symbol.iterator]() {
+//         let step = 0;
+//         return {
+//             next() {
+//                 step++;
+//                 if (step === 1) {
+//                     return { value: '1', done: false};
+//                  }
+//                 else if (step === 2) {
+//                     return { value: '2', done: false};
+//                 }
+//                 else if (step === 3) {
+//                     return { value: '3', done: false};
+//                 }
+//                 return { value: '', done: true };
+//             }
+//         }
+//     }
+// }
+
+// // iterating using for...of
+// for (const i of iterableObj) {
+//  console.log(i);
+// }
+
+// generator function
+function* generatorFunc() {
+  
+    yield 10;
+    yield 20;
+    yield 30;
 }
 
-let p = new Student('Jack');
-p.greet();
+const obj = generatorFunc();
+
+// iteration through generator
+for (let value of obj) {
+    console.log(value);
+}
