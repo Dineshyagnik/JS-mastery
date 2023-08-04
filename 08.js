@@ -2157,17 +2157,151 @@
 //  console.log(i);
 // }
 
-// generator function
-function* generatorFunc() {
+// // generator function
+// function* generatorFunc() {
   
-    yield 10;
-    yield 20;
-    yield 30;
-}
+//     yield 10;
+//     yield 20;
+//     yield 30;
+// }
 
-const obj = generatorFunc();
+// const obj = generatorFunc();
 
-// iteration through generator
-for (let value of obj) {
-    console.log(value);
-}
+// // iteration through generator
+// for (let value of obj) {
+//     console.log(value);
+// }
+
+
+// let student1 = {
+//     age: 24,
+//     name: "John"
+// }
+
+// const handler = {
+//     get: function(obj, prop) {
+//         return obj[prop] ? obj[prop] : 'property does not exist';
+//     }
+// }
+
+// const proxy = new Proxy(student1, handler);
+// console.log(proxy.name); // Felix
+// console.log(proxy.age); // 24
+// console.log(proxy.class); // property does not exist
+
+// let student = {
+//     name: 'Jack',
+//     age: 24
+// }
+
+// const handler = { };
+
+// // passing empty handler
+// const proxy1 = new Proxy(student, {});
+
+// console.log(proxy1); // Proxy {name: "Jack", age: 24}
+// console.log(proxy1.name); // Jack
+
+
+// let student = {
+//     name: 'Jack',
+//     age: 24
+// }
+
+// const handler = {
+
+//     // get the object key and value
+//     get(obj, prop) {
+
+//         return obj[prop];
+//   }
+// }
+
+// const proxy = new Proxy(student, handler);
+// console.log(proxy.name); // Jack
+
+// let student = {
+//     name: 'John'
+// }
+
+// let setNewValue = {
+//   set: function(obj, prop, value) {
+
+//     obj[prop] = value;
+//     return;
+//   }
+// };
+
+// // setting new proxy
+// let person = new Proxy(student, setNewValue);
+
+// // setting new key/value
+// person.age = 25;
+// console.log(person); // Proxy {name: "John", age: 25}
+
+
+// let student = {
+//     name: 'Jack',
+//     age: 24
+// }
+
+// const handler = {
+
+//     // get the object key and value
+//     get(obj, prop) {
+
+//     // check condition
+//     if (prop == 'name') {
+//       return obj[prop];
+//     } else {
+//       return 'Not allowed';
+//     }
+//   }
+// }
+
+// const proxy = new Proxy(student, handler);
+// console.log(proxy.name); // Jack
+// console.log(proxy.age); // Not allowed
+
+// let student = {
+//     name: 'Jack',
+//     age: 23
+// }
+
+// const handler = {
+//     set: function (obj, prop, value) {
+//         if (obj[prop]) {
+            
+//             // cannot change the student value
+//             console.log('Read only')
+//         }
+//     }
+// };
+
+// const proxy = new Proxy(student, handler);
+
+// proxy.name = 'John'; // Read only
+// proxy.age = 33; // Read only
+
+// const myFunction = () => {
+//     console.log("execute this function")
+// };
+
+// const handler = {
+//     set: function (target, prop, value) {
+//         if (prop === 'name' && value === 'Jack') {
+//             // calling another function
+//             myFunction();
+//         }
+//         else {
+//             console.log('Can only access name property');
+//         }
+//     }
+// };
+
+// const proxy = new Proxy({}, handler);
+
+// proxy.name = 'Jack'; // execute this function
+// proxy.age = 33; // Can only access name property
+
+
