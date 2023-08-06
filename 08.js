@@ -2359,10 +2359,25 @@
 // console.log('setTimeout is stopped.');
 
 
-// program to display a name
-function greet(name, lastName) {
-    console.log('Hello' + ' ' + name + ' ' + lastName);
+// // program to display a name
+// function greet(name, lastName) {
+//     console.log('Hello' + ' ' + name + ' ' + lastName);
+// }
+
+// // passing argument to setTimeout
+// setTimeout(greet, 1000, 'John', 'Doe');
+
+
+// function
+function greet(name, callback) {
+    console.log('Hi' + ' ' + name);
+    callback();
 }
 
-// passing argument to setTimeout
-setTimeout(greet, 1000, 'John', 'Doe');
+// callback function
+function callMe() {
+    console.log('I am callback function');
+}
+
+// passing function as an argument
+greet('Peter', callMe);
