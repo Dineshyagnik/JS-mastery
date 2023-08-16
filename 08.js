@@ -2462,15 +2462,125 @@
 //     }
 // );
 
-// returns a promise
-let countValue = new Promise(function (resolve, reject) {
-    // could be resolved or rejected   
-    resolve('Promise resolved'); 
-});
+// // returns a promise
+// let countValue = new Promise(function (resolve, reject) {
+//     // could be resolved or rejected   
+//     resolve('Promise resolved'); 
+// });
 
-// add other blocks of code
-countValue.finally(
-    function greet() {
-        console.log('This code is executed.');
-    }
-);
+// // add other blocks of code
+// countValue.finally(
+//     function greet() {
+//         console.log('This code is executed.');
+//     }
+// );
+
+
+// class car{
+//     constructor(name){
+//         this.brand=name;
+//     }
+// }
+
+// const myCar=new car("Mustang");
+// console.log(myCar.brand)
+
+
+// class Student{
+//     constructor(name){
+//         this.school=name;
+//     }
+//     greet(){
+//         return 'my school is '+ this.school
+//     }
+// }
+
+// const std=new Student('IMS');
+// const grt=std.greet();
+// console.log(std.school)
+// console.log(grt)
+
+
+// class Car{
+//     constructor(name){
+//         this.brand=name;
+//     }
+//     greet(){
+//         return 'I like ' + this.brand;
+//     }
+// }
+// const myCar=new Car('Mercedes');
+// const grt=myCar.greet();
+// console.log(myCar)
+// console.log(grt)
+
+
+// class Car{
+//     constructor(name){
+//         this.brand=name;
+//     }
+//     greet(){
+//         return 'I like ' + this.brand;
+//     }
+// }
+
+// class Model extends Car{
+//     constructor(name,mod){
+//         super(name);
+//         this.model=mod;
+//     }
+//     show(){
+//         return this.greet() + ' The model is '+ this.model;
+//     }
+// }
+
+// const crm=new Model("Mustang","IV12");
+// console.log(crm.show())
+
+// const eprt=()=>console.log("Arrow fnct");
+// eprt();
+
+// const sum=()=>9+12;
+// console.log(sum())
+
+// const sum=(x,y)=>x+y;
+// const res=sum(9,12);
+// console.log(res)
+
+// const fruits=['orange','apple','lichi','mango'];
+// const fruitsListing=fruits.map((item)=>{
+//     return item.toUpperCase();
+// });
+// console.log(fruitsListing);
+
+// let data={
+//     name:'Peter',
+//     age:22,
+//     gender:'male'
+// }
+
+// // let name=data.name;
+// // let age=data.age;
+// // let gender=data.gender;
+
+// let {name,age,gender}=data;
+
+// console.log(name)
+// console.log(age)
+// console.log(gender)
+
+const calculate=(a,b)=>{
+    const add=a+b;
+    const sub=a-b;
+    const mul=a*b;
+    const div=a/b;
+    
+    return [add,sub,mul,div];
+}
+
+const [add,sub,mul,div]=calculate(3,4);
+console.log('sum is '+add);
+console.log('sub is '+sub);
+console.log('mul is '+mul);
+console.log('div is '+div);
+
