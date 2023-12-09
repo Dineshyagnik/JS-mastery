@@ -526,7 +526,7 @@
 
 //     // data property
 //     firstName: 'Monica',
-    
+
 //     // accessor property(getter)
 //     get getName() {
 //         return this.firstName;
@@ -544,7 +544,7 @@
 
 // const student = {
 //     firstName: 'Monica',
-    
+
 //     //accessor property(setter)
 //     set changeName(newName) {
 //         this.firstName = newName;
@@ -860,13 +860,13 @@
 //     ['Sara', 23], 
 //     ['Peter', 24]
 //     ];
-    
+
 //     // access the first item 
 //     console.log(x[0]); // ["Jack", 24]
-    
+
 //     // access the first item of the first inner array
 //     console.log(x[0][0]); // Jack
-    
+
 //     // access the second item of the third inner array
 //     console.log(x[2][1]); // 24
 
@@ -1420,7 +1420,7 @@
 // function test(x = 1) {
 //     console.log(x);
 //   }
-  
+
 //   // passing undefined
 //   // takes default value 1
 //   test(undefined); // 1
@@ -1986,21 +1986,21 @@
 //     constructor(name) {
 //         this.name = name;
 //     }
-  
+
 //     // getter
 //     get personName() {
 //         return this.name;
 //     }
-  
+
 //     // setter
 //     set personName(x) {
 //         this.name = x;
 //     }
 //   }
-  
+
 //   let person1 = new Person('Jack');
 //   console.log(person1.name); // Jack
-  
+
 //   // changing the value of name property
 //   person1.personName = 'Sarah';
 //   console.log(person1.name); // Sarah
@@ -2041,9 +2041,9 @@
 // class Student extends Person {
 
 //     constructor(name) {
-    
+
 //         console.log("Creating student class");
-        
+
 //         // call the super class constructor and pass in the name parameter
 //         super(name);
 //     }
@@ -2059,25 +2059,25 @@
 //         this.name = name;
 //         this.occupation = "unemployed";
 //     }
-    
+
 //     greet() {
 //         console.log(`Hello ${this.name}.`);
 //     }
- 
+
 // }
 
 // // inheriting parent class
 // class Student extends Person {
 
 //     constructor(name) {
-        
+
 //         // call the super class constructor and pass in the name parameter
 //         super(name);
-        
+
 //         // Overriding an occupation property
 //         this.occupation = 'Student';
 //     }
-    
+
 //     // overriding Person's method
 //     greet() {
 //         console.log(`Hello student ${this.name}.`);
@@ -2159,7 +2159,7 @@
 
 // // generator function
 // function* generatorFunc() {
-  
+
 //     yield 10;
 //     yield 20;
 //     yield 30;
@@ -2271,7 +2271,7 @@
 // const handler = {
 //     set: function (obj, prop, value) {
 //         if (obj[prop]) {
-            
+
 //             // cannot change the student value
 //             console.log('Read only')
 //         }
@@ -2569,18 +2569,36 @@
 // console.log(age)
 // console.log(gender)
 
-const calculate=(a,b)=>{
-    const add=a+b;
-    const sub=a-b;
-    const mul=a*b;
-    const div=a/b;
-    
-    return [add,sub,mul,div];
-}
+// const calculate=(a,b)=>{
+//     const add=a+b;
+//     const sub=a-b;
+//     const mul=a*b;
+//     const div=a/b;
 
-const [add,sub,mul,div]=calculate(3,4);
-console.log('sum is '+add);
-console.log('sub is '+sub);
-console.log('mul is '+mul);
-console.log('div is '+div);
+//     return [add,sub,mul,div];
+// }
 
+// const [add,sub,mul,div]=calculate(3,4);
+// console.log('sum is '+add);
+// console.log('sub is '+sub);
+// console.log('mul is '+mul);
+// console.log('div is '+div);
+
+
+// let name= 'sara';
+// {
+//     let name='peter';
+//     console.log(name)
+// }
+// console.log(name);
+
+// const array1 = ['A', 'B', 'C'];
+// array1.forEach((item)=>{
+//     console.log(item);
+// });
+
+const array2=['D','E','F'];
+let newarr=array2.map((item)=>{
+    return item;
+});
+console.log(newarr);
