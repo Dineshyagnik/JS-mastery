@@ -2597,8 +2597,44 @@
 //     console.log(item);
 // });
 
-const array2=['D','E','F'];
-let newarr=array2.map((item)=>{
-    return item;
-});
-console.log(newarr);
+// const array2=['D','E','F'];
+// let newarr=array2.map((item)=>{
+//     return item;
+// });
+// console.log(newarr);
+
+// let sum = 0;
+// for (let i = 0; i <= 10; i++) {
+//     sum = sum + i
+// }
+// console.log(sum);
+
+// let number = prompt('Enter number');
+// let i = 0;
+
+// for (i; i <= 10; i++) {
+//     number = number * i;
+// }
+
+// var x = prompt('Enter 1st value');
+// var y = prompt('Enter 2nd value');
+//   let newx=+x
+//   let newy=+y
+// console.log(x);
+// console.log(y);
+// console.log(Number(x)+Number(y));
+// console.log(`its my way ${newx+newy}`);
+
+// var x = parseInt(prompt('Enter 1st num'));
+// var y = parseInt(prompt('Enter 2nd num'));
+
+// console.log(x + y);
+
+
+// console.log(parseInt('0xFF', 16));
+
+let number = parseInt(prompt('Enter a number'));
+
+for (i = 1; i <= 10; i++) {
+    console.log(`${number} x ${i}=>  ${number * i}`);
+};
