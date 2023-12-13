@@ -2639,29 +2639,46 @@
 //     console.log(`${number} x ${i}=>  ${number * i}`);
 // };
 
-function sum(a, b) {
-    return a + b;
-}
-const res = sum(2, 5);
+// function sum(a, b) {
+//     return a + b;
+// }
+// const res = sum(2, 5);
 
-console.log(res);
+// console.log(res);
 
-let function2 = function (a, b) {
-    return a * b;
-}
-let res2 = function2(4, 4);
-console.log(res2);
+// let function2 = function (a, b) {
+//     return a * b;
+// }
+// let res2 = function2(4, 4);
+// console.log(res2);
 
-let function3 = function sub(a, b) {
-    return a - b;
-}
-let res3 = function3(9, 7);
-console.log(res3);
+// let function3 = function sub(a, b) {
+//     return a - b;
+// }
+// let res3 = function3(9, 7);
+// console.log(res3);
 
-const arrFun = (a, b) => {
-    return a + b;
-}
-let res4 = arrFun(9, 9);
-console.log(res4);
+// const arrFun = (a, b) => {
+//     return a + b;
+// }
+// let res4 = arrFun(9, 9);
+// console.log(res4);
 
-// const arr=[2,4,5,66,889,97,64,3];
+// const arr = [2, 4, 11, 23, 5, 66, 889, 97, 64, 3];
+// console.log(arr.sort((a, b) => a-b));
+// console.log(arr.sort((a, b) => b-a));
+// console.log(arr.sort());
+
+// const array = ['Madhu', 'Harish', 'Dinesh', 'Neha', 'Preeti', 'Kirti', 'Akansha'];
+// console.log(array.sort());
+
+const array = ['Madhu', 'Harish', 'dinesh', 'Neha', 'preeti', 'Kirti', 'Akansha'];
+
+//  const newarr = array.map(item => item.toLowerCase());
+//  console.log(newarr.sort());
+
+console.log(array.sort((a, b) => a.localeCompare(b)));
+
+
+
+
