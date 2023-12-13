@@ -2633,8 +2633,35 @@
 
 // console.log(parseInt('0xFF', 16));
 
-let number = parseInt(prompt('Enter a number'));
+// let number = parseInt(prompt('Enter a number'));
 
-for (i = 1; i <= 10; i++) {
-    console.log(`${number} x ${i}=>  ${number * i}`);
-};
+// for (i = 1; i <= 10; i++) {
+//     console.log(`${number} x ${i}=>  ${number * i}`);
+// };
+
+function sum(a, b) {
+    return a + b;
+}
+const res = sum(2, 5);
+
+console.log(res);
+
+let function2 = function (a, b) {
+    return a * b;
+}
+let res2 = function2(4, 4);
+console.log(res2);
+
+let function3 = function sub(a, b) {
+    return a - b;
+}
+let res3 = function3(9, 7);
+console.log(res3);
+
+const arrFun = (a, b) => {
+    return a + b;
+}
+let res4 = arrFun(9, 9);
+console.log(res4);
+
+// const arr=[2,4,5,66,889,97,64,3];
