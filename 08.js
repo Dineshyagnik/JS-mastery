@@ -2672,13 +2672,56 @@
 // const array = ['Madhu', 'Harish', 'Dinesh', 'Neha', 'Preeti', 'Kirti', 'Akansha'];
 // console.log(array.sort());
 
-const array = ['Madhu', 'Harish', 'dinesh', 'Neha', 'preeti', 'Kirti', 'Akansha'];
+// const array = ['Madhu', 'Harish', 'dinesh', 'Neha', 'preeti', 'Kirti', 'Akansha'];
 
 //  const newarr = array.map(item => item.toLowerCase());
 //  console.log(newarr.sort());
 
-console.log(array.sort((a, b) => a.localeCompare(b)));
+// console.log(array.sort((a, b) => a.localeCompare(b)));
+
+// function myDisplayer(some) {
+//     console.log(some);
+// }
+
+// function myFirst() {
+//     myDisplayer('Hello');
+// };
 
 
+// function mySecond() {
+//     myDisplayer('Good Bye');
+// };
+
+// myFirst();
+// mySecond();
 
 
+// function myDisplayer(some) {
+//     document.getElementById("demo").innerHTML = some;
+//   }
+  
+//   function myFirst() {
+//     myDisplayer("Hello");
+//   }
+  
+//   function mySecond() {
+//     myDisplayer("Goodbye");
+//   }
+  
+//   mySecond();
+//   myFirst();
+
+  
+// function
+function greet(name, callback) {
+    console.log('Hi' + ' ' + name);
+    callback();
+}
+
+// callback function
+function callMe() {
+    console.log('I am callback function');
+}
+
+// passing function as an argument
+greet('Peter', callMe);
