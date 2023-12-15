@@ -2699,29 +2699,40 @@
 // function myDisplayer(some) {
 //     document.getElementById("demo").innerHTML = some;
 //   }
-  
+
 //   function myFirst() {
 //     myDisplayer("Hello");
 //   }
-  
+
 //   function mySecond() {
 //     myDisplayer("Goodbye");
 //   }
-  
+
 //   mySecond();
 //   myFirst();
 
-  
-// function
-function greet(name, callback) {
-    console.log('Hi' + ' ' + name);
-    callback();
-}
 
-// callback function
-function callMe() {
-    console.log('I am callback function');
-}
+// // function
+// function greet(name, callback) {
+//     console.log('Hi' + ' ' + name);
+//     callback();
+// }
 
-// passing function as an argument
-greet('Peter', callMe);
+// // callback function
+// function callMe() {
+//     console.log('I am callback function');
+// }
+
+// // passing function as an argument
+// greet('Peter', callMe);
+
+function func1() {
+    console.log('function 1');
+    setTimeout(() => {
+        function func2() {
+            console.log('function 2');
+        }
+        func2();
+    }, 1000);
+}
+func1();
