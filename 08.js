@@ -2726,13 +2726,20 @@
 // // passing function as an argument
 // greet('Peter', callMe);
 
-function func1() {
-    console.log('function 1');
-    setTimeout(() => {
-        function func2() {
-            console.log('function 2');
-        }
-        func2();
-    }, 1000);
-}
-func1();
+// function func1() {
+//     console.log('function 1');
+//     setTimeout(() => {
+//         function func2() {
+//             console.log('function 2');
+//         }
+//         func2();
+//     }, 1000);
+// }
+// func1();
+
+const fruits=['Apple','Banana','Papaya','Grapes'];
+const veg=['Pea','Potato','Brinjal','Lady-finger'];
+// console.log(fruits);
+// console.log(veg);
+const mixed=[...fruits,...veg];
+console.log(mixed);
