@@ -2737,9 +2737,22 @@
 // }
 // func1();
 
-const fruits=['Apple','Banana','Papaya','Grapes'];
-const veg=['Pea','Potato','Brinjal','Lady-finger'];
-// console.log(fruits);
-// console.log(veg);
-const mixed=[...fruits,...veg];
-console.log(mixed);
+// const fruits=['Apple','Banana','Papaya','Grapes'];
+// const veg=['Pea','Potato','Brinjal','Lady-finger'];
+// // console.log(fruits);
+// // console.log(veg);
+// const mixed=[...fruits,...veg];
+// console.log(mixed);
+
+const datas = [
+    { name: 'Dinesh', age: '22', gender: 'Male' },
+    { name: 'Suraj', age: '25', gender: 'Male' },
+    { name: 'Harish', age: '27', gender: 'Male' },
+    { name: 'Maya', age: '22', gender: 'female' },
+];
+
+const data = datas.map((item) => {
+    console.log(item.name)
+    console.log(item.age)
+    console.log(item.gender)
+})
