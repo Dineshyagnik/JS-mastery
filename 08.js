@@ -2744,15 +2744,19 @@
 // const mixed=[...fruits,...veg];
 // console.log(mixed);
 
-const datas = [
-    { name: 'Dinesh', age: '22', gender: 'Male' },
-    { name: 'Suraj', age: '25', gender: 'Male' },
-    { name: 'Harish', age: '27', gender: 'Male' },
-    { name: 'Maya', age: '22', gender: 'female' },
-];
+// const datas = [
+//     { name: 'Dinesh', age: '22', gender: 'Male' },
+//     { name: 'Suraj', age: '25', gender: 'Male' },
+//     { name: 'Harish', age: '27', gender: 'Male' },
+//     { name: 'Maya', age: '22', gender: 'female' },
+// ];
 
-const data = datas.map((item) => {
-    console.log(item.name)
-    console.log(item.age)
-    console.log(item.gender)
-})
+// const data = datas.map((item) => {
+//     console.log(item.name)
+//     console.log(item.age)
+//     console.log(item.gender)
+// });
+
+const str="important";
+let newstr=str.split("").reverse().join("");
+console.log(newstr);
