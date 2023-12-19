@@ -2757,6 +2757,30 @@
 //     console.log(item.gender)
 // });
 
-const str="important";
-let newstr=str.split("").reverse().join("");
-console.log(newstr);
+// const str="important";
+// let newstr=str.split("").reverse().join("");
+// console.log(newstr);
+
+function sum(a,b){
+    return a+b;
+}
+const res=sum(2,8);
+console.log(res);
+
+function mul(a,b){
+    return a*b;
+}
+const res2=mul(12,22);
+console.log(res2);
+
+function sub(a,b){
+    return a-b;
+}
+const res3=sub(12,3);
+console.log(res3);
+
+function div(a,b){
+    return a/b;
+}
+const res4=div(49,7);
+console.log(res4);
