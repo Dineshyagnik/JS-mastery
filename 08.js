@@ -2761,26 +2761,49 @@
 // let newstr=str.split("").reverse().join("");
 // console.log(newstr);
 
-function sum(a,b){
-    return a+b;
-}
-const res=sum(2,8);
-console.log(res);
+// function sum(a,b){
+//     return a+b;
+// }
+// const res=sum(2,8);
+// console.log(res);
 
-function mul(a,b){
-    return a*b;
-}
-const res2=mul(12,22);
-console.log(res2);
+// function mul(a,b){
+//     return a*b;
+// }
+// const res2=mul(12,22);
+// console.log(res2);
 
-function sub(a,b){
-    return a-b;
-}
-const res3=sub(12,3);
-console.log(res3);
+// function sub(a,b){
+//     return a-b;
+// }
+// const res3=sub(12,3);
+// console.log(res3);
 
-function div(a,b){
-    return a/b;
-}
-const res4=div(49,7);
-console.log(res4);
+// function div(a,b){
+//     return a/b;
+// }
+// const res4=div(49,7);
+// console.log(res4);
+
+const data = [
+    { name: 'Dinesh', age: 22, gender: 'male' },
+    { name: 'Harish', age: 25, gender: 'male' },
+    { name: 'Madhukar', age: 21, gender: 'male' },
+    { name: 'Nikhil', age: 22, gender: 'male' },
+];
+
+// data.map((item)=>{
+//     console.log(`Person1 ${item.name}, ${item.age}, ${item.gender}`);
+// });
+
+
+for(let i=0;i<data.length;i++){
+    console.log(`Person1 ${data[i].name}, ${data[i].age}, ${data[i].gender}`);
+};
+
+
+// function add(a,b){
+//     return a+b;
+// }
+// // const res=add(12,23);
+// console.log(add(12,23));
