@@ -2787,19 +2787,27 @@
 
 const data = [
     { name: 'Dinesh', age: 22, gender: 'male' },
-    { name: 'Harish', age: 25, gender: 'male' },
-    { name: 'Madhukar', age: 21, gender: 'male' },
-    { name: 'Nikhil', age: 22, gender: 'male' },
+    { name: 'Harish', age: 15, gender: 'male' },
+    { name: 'Madhukar', age: 21, gender: 'female' },
+    { name: 'Nikhil', age: 12, gender: 'male' },
 ];
+
+
+let ages=[12,22,33,23,24,25,29];
+let votable=data.filter((ele)=>{
+    return ele.age>18&&ele.gender=="female";
+});
+console.log(votable);
+
 
 // data.map((item)=>{
 //     console.log(`Person1 ${item.name}, ${item.age}, ${item.gender}`);
 // });
 
 
-for(let i=0;i<data.length;i++){
-    console.log(`Person1 ${data[i].name}, ${data[i].age}, ${data[i].gender}`);
-};
+// for(let i=0;i<data.length;i++){
+//     console.log(`Person1 ${data[i].name}, ${data[i].age}, ${data[i].gender}`);
+// };
 
 
 // function add(a,b){
