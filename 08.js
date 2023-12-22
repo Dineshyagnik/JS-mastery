@@ -2785,19 +2785,19 @@
 // const res4=div(49,7);
 // console.log(res4);
 
-const data = [
-    { name: 'Dinesh', age: 22, gender: 'male' },
-    { name: 'Harish', age: 15, gender: 'male' },
-    { name: 'Madhukar', age: 21, gender: 'female' },
-    { name: 'Nikhil', age: 12, gender: 'male' },
-];
+// const data = [
+//     { name: 'Dinesh', age: 22, gender: 'male' },
+//     { name: 'Harish', age: 15, gender: 'male' },
+//     { name: 'Madhukar', age: 21, gender: 'female' },
+//     { name: 'Nikhil', age: 12, gender: 'male' },
+// ];
 
 
-let ages=[12,22,33,23,24,25,29];
-let votable=data.filter((ele)=>{
-    return ele.age>18&&ele.gender=="female";
-});
-console.log(votable);
+// let ages=[12,22,33,23,24,25,29];
+// let votable=data.filter((ele)=>{
+//     return ele.age>18&&ele.gender=="female";
+// });
+// console.log(votable);
 
 
 // data.map((item)=>{
@@ -2815,3 +2815,9 @@ console.log(votable);
 // }
 // // const res=add(12,23);
 // console.log(add(12,23));
+
+
+const str='dinesh';
+// let reverseStr=str.split("").reduce((acc,char)=>char+acc);
+let reverseStr=str.split("").reverse().join("");
+console.log(reverseStr);
