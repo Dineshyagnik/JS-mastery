@@ -2817,7 +2817,20 @@
 // console.log(add(12,23));
 
 
-const str='dinesh';
-// let reverseStr=str.split("").reduce((acc,char)=>char+acc);
-let reverseStr=str.split("").reverse().join("");
-console.log(reverseStr);
+// const str='dinesh';
+// // let reverseStr=str.split("").reduce((acc,char)=>char+acc);
+// let reverseStr=str.split("").reverse().join("");
+// console.log(reverseStr);
+
+
+const arr=[22,33,12,23,25,55,66];
+arr.forEach((num,index)=>{
+    console.log(`index is ${index} and number is ${num}`);
+});
+
+let numbers=[22,34,23,11,15,9,4,6,7];
+let sumAll=0;
+numbers.forEach((num)=>{
+    sumAll+=num;
+});
+console.log(sumAll);
