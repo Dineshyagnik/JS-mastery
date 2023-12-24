@@ -2823,14 +2823,42 @@
 // console.log(reverseStr);
 
 
-const arr=[22,33,12,23,25,55,66];
-arr.forEach((num,index)=>{
-    console.log(`index is ${index} and number is ${num}`);
-});
+// const arr=[22,33,12,23,25,55,66];
+// arr.forEach((num,index)=>{
+//     console.log(`index is ${index} and number is ${num}`);
+// });
 
-let numbers=[22,34,23,11,15,9,4,6,7];
-let sumAll=0;
-numbers.forEach((num)=>{
-    sumAll+=num;
-});
-console.log(sumAll);
+// let numbers=[22,34,23,11,15,9,4,6,7];
+// let sumAll=0;
+// numbers.forEach((num)=>{
+//     sumAll+=num;
+// });
+// console.log(sumAll);
+
+let day;
+switch (new Date().getDay()) {
+    case 0:
+        day = 'Sunday';
+        break;
+    case 1:
+        day = 'Monday';
+        break;
+    case 2:
+        day = 'Tuesday';
+        break;
+    case 3:
+        day = 'Wednesday';
+        break;
+    case 4:
+        day = 'Thursday';
+        break;
+    case 5:
+        day = 'Friday';
+        break;
+    case 6:
+        day = 'Saturday';
+        break;
+    default:
+        day = 'not a day';
+};
+console.log(day);
