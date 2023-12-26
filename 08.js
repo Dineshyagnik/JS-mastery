@@ -2864,6 +2864,8 @@
 // console.log(day);
 
 
-let arr=[12,134,44,55,667,7,89,9];
-console.log(arr.slice(1));
-console.log(arr.slice(1,2));
+let arr = [12, 134, 44, 55, 667, 7, 89, 9];
+// console.log(arr.slice(1));
+// console.log(arr.slice(1, 2));
+// console.log(arr.indexOf(55));
+console.log(arr.splice(2,2));
