@@ -2864,8 +2864,31 @@
 // console.log(day);
 
 
-let arr = [12, 134, 44, 55, 667, 7, 89, 9];
+// let arr = [12, 134, 44, 55, 667, 7, 89, 9];
 // console.log(arr.slice(1));
 // console.log(arr.slice(1, 2));
 // console.log(arr.indexOf(55));
-console.log(arr.splice(2,2));
+// console.log(arr.splice(2,2));
+
+
+// let weather = 20;
+let weather=parseInt(prompt('Enter degree'));
+
+if(weather==20){
+    console.log('Nice Weather');
+}
+else if(weather==30){
+    console.log('Normal waether');
+}
+else if(weather==35){
+    console.log('Summer Time');
+}
+else if(weather===40){
+    console.log('very hot');
+}
+else if(weather==45){
+    console.log('very very hot outside');
+}
+else{
+    console.log("Dont't go outside");
+}
