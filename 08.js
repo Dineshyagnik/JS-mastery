@@ -2872,23 +2872,28 @@
 
 
 // let weather = 20;
-let weather=parseInt(prompt('Enter degree'));
+// let weather=parseInt(prompt('Enter degree'));
 
-if(weather==20){
-    console.log('Nice Weather');
-}
-else if(weather==30){
-    console.log('Normal waether');
-}
-else if(weather==35){
-    console.log('Summer Time');
-}
-else if(weather===40){
-    console.log('very hot');
-}
-else if(weather==45){
-    console.log('very very hot outside');
-}
-else{
-    console.log("Dont't go outside");
-}
+// if(weather==20){
+//     console.log('Nice Weather');
+// }
+// else if(weather==30){
+//     console.log('Normal waether');
+// }
+// else if(weather==35){
+//     console.log('Summer Time');
+// }
+// else if(weather===40){
+//     console.log('very hot');
+// }
+// else if(weather==45){
+//     console.log('very very hot outside');
+// }
+// else{
+//     console.log("Dont't go outside");
+// }
+
+let num=[12,33,4,5,7,8,9,0];
+let num2=[22,45,78,90,100];
+let allNum=[...num,...num2];
+console.log(allNum);
