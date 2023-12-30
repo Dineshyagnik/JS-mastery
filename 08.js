@@ -2893,7 +2893,18 @@
 //     console.log("Dont't go outside");
 // }
 
-let num=[12,33,4,5,7,8,9,0];
-let num2=[22,45,78,90,100];
-let allNum=[...num,...num2];
-console.log(allNum);
+// let num=[12,33,4,5,7,8,9,0];
+// let num2=[22,45,78,90,100];
+// let allNum=[...num,...num2];
+// console.log(allNum);
+
+const obj={
+    name:'dinesh',
+    age:12,
+    gender:'male',
+
+    greet(){
+        console.log(`my name is ${this.name} and age is ${this.age}`);
+    }
+};
+console.log(obj.greet());
