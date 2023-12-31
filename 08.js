@@ -2908,3 +2908,6 @@ const obj={
     }
 };
 console.log(obj.greet());
+console.log(obj.name);
+console.log(obj.age);
+console.log(obj.gender);
