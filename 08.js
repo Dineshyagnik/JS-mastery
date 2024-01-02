@@ -2898,16 +2898,22 @@
 // let allNum=[...num,...num2];
 // console.log(allNum);
 
-const obj={
-    name:'dinesh',
-    age:12,
-    gender:'male',
+// const obj={
+//     name:'dinesh',
+//     age:12,
+//     gender:'male',
 
-    greet(){
-        console.log(`my name is ${this.name} and age is ${this.age}`);
-    }
-};
-console.log(obj.greet());
-console.log(obj.name);
-console.log(obj.age);
-console.log(obj.gender);
+//     greet(){
+//         console.log(`my name is ${this.name} and age is ${this.age}`);
+//     }
+// };
+// console.log(obj.greet());
+// console.log(obj.name);
+// console.log(obj.age);
+// console.log(obj.gender);
+
+
+const arr=[23,5566,8,90,0,23,4,5,6,7,88,9];
+arr.forEach((item)=>{
+    console.log(item);
+})
