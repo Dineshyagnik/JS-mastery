@@ -2913,7 +2913,14 @@
 // console.log(obj.gender);
 
 
-const arr=[23,5566,8,90,0,23,4,5,6,7,88,9];
-arr.forEach((item)=>{
-    console.log(item);
-})
+// const arr=[23,5566,8,90,0,23,4,5,6,7,88,9];
+// arr.forEach((item)=>{
+//     console.log(item);
+// });
+
+
+const arr=[12,44,67,8,9,33,5,7,8,9];
+let arr2=arr.map((item)=>{
+    return item*2
+});
+console.log(arr2);
