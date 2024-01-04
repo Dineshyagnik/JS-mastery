@@ -2919,8 +2919,15 @@
 // });
 
 
+// const arr=[12,44,67,8,9,33,5,7,8,9];
+// let arr2=arr.map((item)=>{
+//     return item*2
+// });
+// console.log(arr2);
+
+
 const arr=[12,44,67,8,9,33,5,7,8,9];
 let arr2=arr.map((item)=>{
-    return item*2
+    return item*item;
 });
 console.log(arr2);
