@@ -2926,8 +2926,38 @@
 // console.log(arr2);
 
 
-const arr=[12,44,67,8,9,33,5,7,8,9];
-let arr2=arr.map((item)=>{
-    return item*item;
+// const arr=[12,44,67,8,9,33,5,7,8,9];
+// let arr2=arr.map((item)=>{
+//     return item*item;
+// });
+// console.log(arr2);
+
+
+let data=[
+    {
+        id:1,
+        product_name:'Colgate',
+        price:219,
+        stock:2000
+    },
+    {
+        id:2,
+        product_name:'Coffee',
+        price:619,
+        stock:166
+    },
+    {
+        id:3,
+        product_name:'Shoap',
+        price:29,
+        stock:200
+    }
+];
+
+let ans;
+let products=data.forEach((ele,i)=>{
+    if(ele.id==3){
+        ans=ele
+    }
 });
-console.log(arr2);
+console.log(ans);
