@@ -2955,9 +2955,21 @@ let data=[
 ];
 
 let ans;
-let products=data.forEach((ele,i)=>{
-    if(ele.id==3){
-        ans=ele
+// let products=data.forEach((ele,i)=>{
+//     if(ele.id==3){
+//         ans=ele
+//     }
+// });
+
+// let products=data.map((ele)=>{
+//     if(ele.id==1){
+//         return ele
+//     }
+// });
+
+let products=data.filter((ele)=>{
+    if(ele.id==1){
+        return ele
     }
-});
-console.log(ans);
+}); 
+console.log(products);
