@@ -2967,9 +2967,16 @@ let ans;
 //     }
 // });
 
-let products=data.filter((ele)=>{
-    if(ele.id==1){
-        return ele
+// let products=data.filter((ele)=>{
+//     if(ele.id==1){
+//         return ele
+//     }
+// }); 
+// console.log(products);
+
+let productsDetails=data.forEach((ele,i)=>{
+    if(ele.id==3){
+        ans= ele.product_name
     }
-}); 
-console.log(products);
+});
+console.log(ans);
