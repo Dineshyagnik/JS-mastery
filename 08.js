@@ -2974,9 +2974,57 @@ let ans;
 // }); 
 // console.log(products);
 
-let productsDetails=data.forEach((ele,i)=>{
-    if(ele.id==3){
-        ans= ele.product_name
+// let productsDetails=data.forEach((ele,i)=>{
+//     if(ele.id==3){
+//         ans= ele.product_name
+//     }
+// });
+// console.log(ans);
+
+
+// let value = 1;
+
+// doSomething(() => {
+//   value = 2;
+// });
+
+// console.log(value);
+
+// let num=10;
+// let num2=1;
+// for(var i=2;i<=num;i++){
+//    num2= num2*i
+// }
+
+// console.log(num2);
+
+// factorial by recursion
+
+// function factorial(num){
+//     if(num==1){
+//         return num
+//     }
+//     console.log(num);
+//     return num*factorial(num-1);
+
+// }
+// let res=factorial(5);
+// console.log(res);
+let arr=[2,4,5,11,14,13,2,45,55];
+let i = 0;
+// for(let i=0;i<arr.length-1;i++){
+    // console.log(arr[i]);
+    for(let j=0;j<arr.length-i;j++){
+        i= i+1;
+        console.log(i);
+        if(arr[j]>arr[j+1]){
+            let temp=arr[j];
+            arr[j]=arr[j+1];
+            arr[j+1]=temp;
+        }
     }
-});
-console.log(ans);
+// }
+console.log(arr);
+// arr.forEach((ele,i)=>{
+//    console.log(i,ele);
+// })
