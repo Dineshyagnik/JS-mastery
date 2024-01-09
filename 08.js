@@ -2954,7 +2954,7 @@ let data=[
     }
 ];
 
-let ans;
+// let ans;
 // let products=data.forEach((ele,i)=>{
 //     if(ele.id==3){
 //         ans=ele
@@ -3010,21 +3010,30 @@ let ans;
 // }
 // let res=factorial(5);
 // console.log(res);
-let arr=[2,4,5,11,14,13,2,45,55];
-let i = 0;
-// for(let i=0;i<arr.length-1;i++){
-    // console.log(arr[i]);
-    for(let j=0;j<arr.length-i;j++){
-        i= i+1;
-        console.log(i);
-        if(arr[j]>arr[j+1]){
-            let temp=arr[j];
-            arr[j]=arr[j+1];
-            arr[j+1]=temp;
-        }
-    }
-// }
-console.log(arr);
+// let arr=[2,4,5,11,14,13,2,45,55];
+// let i = 0;
+// // for(let i=0;i<arr.length-1;i++){
+//     // console.log(arr[i]);
+//     for(let j=0;j<arr.length-i;j++){
+//         i= i+1;
+//         console.log(i);
+//         if(arr[j]>arr[j+1]){
+//             let temp=arr[j];
+//             arr[j]=arr[j+1];
+//             arr[j+1]=temp;
+//         }
+//     }
+// // }
+// console.log(arr);
 // arr.forEach((ele,i)=>{
 //    console.log(i,ele);
 // })
+
+function factorial(num){
+    if(num==1){
+        return num
+    }
+    return num*factorial(num-1)
+}
+let ansss=factorial(10);
+console.log(ansss);
