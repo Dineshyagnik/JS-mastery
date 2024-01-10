@@ -3029,11 +3029,21 @@ let data=[
 //    console.log(i,ele);
 // })
 
+// function factorial(num){
+//     if(num==1){
+//         return num
+//     }
+//     return num*factorial(num-1)
+// }
+// let ansss=factorial(10);
+// console.log(ansss);
+
+
 function factorial(num){
     if(num==1){
         return num
     }
-    return num*factorial(num-1)
+    return num*factorial(num-1);
 }
 let ansss=factorial(10);
 console.log(ansss);
