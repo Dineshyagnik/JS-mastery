@@ -3039,11 +3039,25 @@ let data=[
 // console.log(ansss);
 
 
-function factorial(num){
-    if(num==1){
-        return num
-    }
-    return num*factorial(num-1);
+// function factorial(num){
+//     if(num==1){
+//         return num
+//     }
+//     return num*factorial(num-1);
+// }
+// let ansss=factorial(10);
+// console.log(ansss);
+
+function sum(a,b){
+    return a+b;
 }
-let ansss=factorial(10);
-console.log(ansss);
+
+function sub(a,b){
+    return a-b;
+}
+
+let sumNum=sum(2,4);
+console.log(sumNum);
+
+let subNum=sub(28,3);
+console.log(subNum);
