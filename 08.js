@@ -3048,16 +3048,31 @@ let data=[
 // let ansss=factorial(10);
 // console.log(ansss);
 
-function sum(a,b){
-    return a+b;
-}
+// function sum(a,b){
+//     return a+b;
+// }
 
-function sub(a,b){
-    return a-b;
-}
+// function sub(a,b){
+//     return a-b;
+// }
 
-let sumNum=sum(2,4);
-console.log(sumNum);
+// let sumNum=sum(2,4);
+// console.log(sumNum);
 
-let subNum=sub(28,3);
-console.log(subNum);
+// let subNum=sub(28,3);
+// console.log(subNum);
+
+
+
+function myFirst() {
+    myDisplayer("Hello");
+  }
+  
+  function mySecond() {
+    myDisplayer("Goodbye");
+  }
+  
+  let ans1=myFirst();
+ let ans2= mySecond();
+
+ console.log(ans1);
