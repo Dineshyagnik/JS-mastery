@@ -3064,15 +3064,38 @@ let data=[
 
 
 
-function myFirst() {
-    myDisplayer("Hello");
-  }
+// function myFirst() {
+//     myDisplayer("Hello");
+//   }
   
-  function mySecond() {
-    myDisplayer("Goodbye");
-  }
+//   function mySecond() {
+//     myDisplayer("Goodbye");
+//   }
   
-  let ans1=myFirst();
- let ans2= mySecond();
+//   let ans1=myFirst();
+//  let ans2= mySecond();
 
- console.log(ans1);
+//  console.log(ans1);
+
+
+// function greet(name) {
+//     console.log('Hi' + ' ' + name);
+// }
+
+// greet('Peter'); 
+
+
+
+// function
+function greet(name, callback) {
+    console.log('Hi' + ' ' + name);
+    callback();
+}
+
+// callback function
+function callMe() {
+    console.log('I am callback function');
+}
+
+// passing function as an argument
+greet('Peter', callMe);
