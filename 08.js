@@ -3115,19 +3115,33 @@ let data=[
 // setTimeout(greet, 2000);
 // sayName('John');
 
-// Callback Function Example
-function greet(name, myFunction) {
-    console.log('Hello world');
+// // Callback Function Example
+// function greet(name, myFunction) {
+//     console.log('Hello world');
 
-    // callback function
-    // executed only after the greet() is executed
-    myFunction(name);
-}
+//     // callback function
+//     // executed only after the greet() is executed
+//     myFunction(name);
+// }
 
-// callback function
-function sayName(name) {
-    console.log('Hello' + ' ' + name);
-}
+// // callback function
+// function sayName(name) {
+//     console.log('Hello' + ' ' + name);
+// }
 
-// calling the function after 2 seconds
-setTimeout(greet, 2000, 'John', sayName);
+// // calling the function after 2 seconds
+// setTimeout(greet, 2000, 'John', sayName);
+
+// program to display text 5 times
+// const n = 5;
+
+// // looping from i = 1 to 5
+// for (let i = 1; i <= n; i++) {
+//     console.log(`Hello JavaScript.`);
+// }
+
+const arr=[1,2,44,5,5,7,88,11,77];
+let res;
+for(let i=0;i<arr.length;i++){
+    console.log(arr[i]);
+};
