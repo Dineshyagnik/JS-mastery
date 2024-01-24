@@ -3154,33 +3154,49 @@ let data=[
 // console.log(b == '2');   // true
 // console.log(c == 'Hello');  // false
 
-let x = 5;
-let y = 3;
+// let x = 5;
+// let y = 3;
 
-// addition
-console.log('x + y = ', x + y);  // 8
+// // addition
+// console.log('x + y = ', x + y);  // 8
 
-// subtraction
-console.log('x - y = ', x - y);  // 2
+// // subtraction
+// console.log('x - y = ', x - y);  // 2
 
-// multiplication
-console.log('x * y = ', x * y);  // 15
+// // multiplication
+// console.log('x * y = ', x * y);  // 15
 
-// division
-console.log('x / y = ', x / y);  // 1.6666666666666667
+// // division
+// console.log('x / y = ', x / y);  // 1.6666666666666667
 
-// remainder
-console.log('x % y = ', x % y);   // 2
+// // remainder
+// console.log('x % y = ', x % y);   // 2
 
-// increment
-console.log('++x = ', ++x); // x is now 6
-console.log('x++ = ', x++); // prints 6 and then increased to 7
-console.log('x = ', x);     // 7
+// // increment
+// console.log('++x = ', ++x); // x is now 6
+// console.log('x++ = ', x++); // prints 6 and then increased to 7
+// console.log('x = ', x);     // 7
 
-// decrement
-console.log('--x = ', --x); // x is now 6
-console.log('x-- = ', x--); // prints 6 and then decreased to 5
-console.log('x = ', x);     // 5
+// // decrement
+// console.log('--x = ', --x); // x is now 6
+// console.log('x-- = ', x--); // prints 6 and then decreased to 5
+// console.log('x = ', x);     // 5
 
-//exponentiation
-console.log('x ** y =', x ** y);
+// //exponentiation
+// console.log('x ** y =', x ** y);
+
+
+// const array1 = ['a', 'b', 'c'];
+
+// array1.forEach((element) => console.log(element));
+
+const ratings = [5, 4, 5];
+let sum = 0;
+
+const sumFunction = async (a, b) => a + b;
+
+ratings.forEach(async (rating) => {
+  sum = await sumFunction(sum, rating);
+});
+
+console.log(sum);
