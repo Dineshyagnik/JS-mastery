@@ -3190,13 +3190,25 @@ let data=[
 
 // array1.forEach((element) => console.log(element));
 
-const ratings = [5, 4, 5];
+// const ratings = [5, 4, 5];
+// let sum = 0;
+
+// const sumFunction = async (a, b) => a + b;
+
+// ratings.forEach(async (rating) => {
+//   sum = await sumFunction(sum, rating);
+// });
+
+// console.log(sum);
+
+// program to display the sum of natural numbers
 let sum = 0;
+const n = 100
 
-const sumFunction = async (a, b) => a + b;
+// looping from i = 1 to n
+// in each iteration, i is increased by 1
+for (let i = 1; i <= n; i++) {
+    sum += i;  // sum = sum + i
+}
 
-ratings.forEach(async (rating) => {
-  sum = await sumFunction(sum, rating);
-});
-
-console.log(sum);
+console.log('sum:', sum);
