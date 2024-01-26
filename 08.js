@@ -3202,13 +3202,31 @@ let data=[
 // console.log(sum);
 
 // program to display the sum of natural numbers
-let sum = 0;
-const n = 100
+// let sum = 0;
+// const n = 100
 
-// looping from i = 1 to n
-// in each iteration, i is increased by 1
-for (let i = 1; i <= n; i++) {
-    sum += i;  // sum = sum + i
+// // looping from i = 1 to n
+// // in each iteration, i is increased by 1
+// for (let i = 1; i <= n; i++) {
+//     sum += i;  // sum = sum + i
+// }
+
+// console.log('sum:', sum);
+
+
+let sum = 0;
+
+// take input from the user
+let number = parseInt(prompt('Enter a number: '));
+
+while(number >= 0) {
+
+    // add all positive numbers
+    sum += number;
+
+    // take input again if the number is positive
+    number = parseInt(prompt('Enter a number: '));
 }
 
-console.log('sum:', sum);
+// display the sum
+console.log(`The sum is ${sum}.`);
