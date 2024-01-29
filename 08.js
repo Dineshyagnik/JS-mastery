@@ -3231,12 +3231,22 @@ let data=[
 // // display the sum
 // console.log(`The sum is ${sum}.`);
 
-let sum = 0;
-let number = 0;
+// let sum = 0;
+// let number = 0;
 
-do {
-    sum += number;
-    number = parseInt(prompt('Enter a number: '));
-} while(number >= 0)
+// do {
+//     sum += number;
+//     number = parseInt(prompt('Enter a number: '));
+// } while(number >= 0)
 
-console.log(`The sum is ${sum}.`);
+// console.log(`The sum is ${sum}.`);
+
+
+// program to print the value of i
+for (let i = 1; i <= 5; i++) {
+    // break condition     
+    if (i == 3) {
+        break;
+    }
+    console.log(i);
+}
