@@ -3251,20 +3251,43 @@ let data=[
 //     console.log(i);
 // }
 
-let sum = 0, number;
+// let sum = 0, number;
 
-while(true) {
+// while(true) {
 
-    // take input again if the number is positive
-    number = parseInt(prompt('Enter a number: '));
+//     // take input again if the number is positive
+//     number = parseInt(prompt('Enter a number: '));
 
-    // break condition
-    if(number < 0) {
-        break;
-    }
+//     // break condition
+//     if(number < 0) {
+//         break;
+//     }
+
+//     // add all positive numbers
+//     sum += number;
+
+// }
+
+// // display the sum
+// console.log(`The sum is ${sum}.`);
+
+let sum = 0;
+let number = 0;
+
+while (number >= 0) {
 
     // add all positive numbers
     sum += number;
+
+    // take input from the user
+    number = parseInt(prompt('Enter a number: '));
+
+    // continue condition
+    if (isNaN(number)) {
+        console.log('You entered a string.');
+        number = 0; // the value of number is made 0 again
+        continue;
+    }
 
 }
 
