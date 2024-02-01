@@ -3271,25 +3271,42 @@ let data=[
 // // display the sum
 // console.log(`The sum is ${sum}.`);
 
-let sum = 0;
-let number = 0;
+// let sum = 0;
+// let number = 0;
 
-while (number >= 0) {
+// while (number >= 0) {
 
-    // add all positive numbers
-    sum += number;
+//     // add all positive numbers
+//     sum += number;
 
-    // take input from the user
-    number = parseInt(prompt('Enter a number: '));
+//     // take input from the user
+//     number = parseInt(prompt('Enter a number: '));
 
-    // continue condition
-    if (isNaN(number)) {
-        console.log('You entered a string.');
-        number = 0; // the value of number is made 0 again
-        continue;
-    }
+//     // continue condition
+//     if (isNaN(number)) {
+//         console.log('You entered a string.');
+//         number = 0; // the value of number is made 0 again
+//         continue;
+//     }
 
+// }
+
+// // display the sum
+// console.log(`The sum is ${sum}.`);
+
+
+let a = 2;
+
+switch (a) {
+
+    case 1:
+        a = 'one';
+        break;
+    case 2:
+        a = 'two';
+        break;
+    default:
+        a = 'not found';
+        break;
 }
-
-// display the sum
-console.log(`The sum is ${sum}.`);
+console.log(`The value is ${a}`);
