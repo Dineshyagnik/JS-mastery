@@ -3295,18 +3295,34 @@ let data=[
 // console.log(`The sum is ${sum}.`);
 
 
-let a = 2;
+// let a = 2;
 
-switch (a) {
+// switch (a) {
 
-    case 1:
-        a = 'one';
-        break;
-    case 2:
-        a = 'two';
-        break;
-    default:
-        a = 'not found';
-        break;
+//     case 1:
+//         a = 'one';
+//         break;
+//     case 2:
+//         a = 'two';
+//         break;
+//     default:
+//         a = 'not found';
+//         break;
+// }
+// console.log(`The value is ${a}`);
+
+
+// before you would do something like this
+const person = {
+    name: 'Sara',
+    age: 25,
+    gender: 'female'    
 }
-console.log(`The value is ${a}`);
+
+let name = person.name;
+let age = person.age;
+let gender = person.gender;
+
+console.log(name); // Sara
+console.log(age); // 25
+console.log(gender); // female
