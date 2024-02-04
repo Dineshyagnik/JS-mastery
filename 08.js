@@ -3328,10 +3328,15 @@ let data=[
 // console.log(gender); // female
 
 
+// const map1 = new Map(); 
+// console.log(map1); 
 
-// create a Map
-const map1 = new Map(); // an empty map
-console.log(map1); // Map {}
+// map1.clear();
+// console.log(map1);
 
-map1.clear();
-console.log(map1);
+
+let map1 = new Map();
+
+map1.set('info', {name: 'Jack', age: 26});
+console.log(map1); 
+
