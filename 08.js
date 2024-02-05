@@ -3335,8 +3335,15 @@ let data=[
 // console.log(map1);
 
 
-let map1 = new Map();
+// let map1 = new Map();
 
-map1.set('info', {name: 'Jack', age: 26});
-console.log(map1); 
+// map1.set('info', {name: 'Jack', age: 26});
+// console.log(map1); 
 
+// Map with object key
+let map2 = new Map();
+
+let obj = {};
+map2.set(obj, {name: 'Jack', age: "26"});
+
+console.log(map2); // Map {{} => {name: "Jack", age: "26"}}
