@@ -3366,6 +3366,7 @@ let data=[
 
 let map1 = new Map();
 map1.set('info', {name: 'Jack', age: "26"});
+map1.set('info', {name: 'Jack2', age: "21"});
 
 // removing a particular element
 map1.delete('address'); // false
