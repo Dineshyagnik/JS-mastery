@@ -3364,13 +3364,22 @@ let data=[
 // console.log(map1.has('info')); // true
 
 
+// let map1 = new Map();
+// map1.set('info', {name: 'Jack', age: "26"});
+// map1.set('info', {name: 'Jack2', age: "21"});
+
+// // removing a particular element
+// map1.delete('address'); // false
+// console.log(map1); // Map {"info" => {name: "Jack", age: "26"}} 
+
+// map1.delete('info'); // true
+// console.log(map1); // Map {}
+
 let map1 = new Map();
-map1.set('info', {name: 'Jack', age: "26"});
-map1.set('info', {name: 'Jack2', age: "21"});
+map1.set('name', 'Jack');
+map1.set('age', '27');
 
-// removing a particular element
-map1.delete('address'); // false
-console.log(map1); // Map {"info" => {name: "Jack", age: "26"}} 
-
-map1.delete('info'); // true
-console.log(map1); // Map {}
+// looping through Map
+for (let [key, value] of map1) {
+    console.log(key + '- ' + value);
+}
