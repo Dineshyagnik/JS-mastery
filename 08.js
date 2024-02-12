@@ -3385,11 +3385,20 @@ let data=[
 // }
 
 
-let map1 = new Map();
-map1.set('name', 'Jack');
-map1.set('age', '27');
+// let map1 = new Map();
+// map1.set('name', 'Jack');
+// map1.set('age', '27');
 
-// looping through the Map
-for (let key of map1.keys()) {
-  console.log(key)
-}
+// // looping through the Map
+// for (let key of map1.keys()) {
+//   console.log(key)
+// }
+
+
+const weakMap = new WeakMap();
+console.log(weakMap); 
+
+let obj = {};
+weakMap.set(obj, 'hello');
+
+console.log(weakMap);
