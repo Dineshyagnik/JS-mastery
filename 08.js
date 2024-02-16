@@ -3420,15 +3420,23 @@ let data=[
 
 // console.log(weakMap);
 
-const weakMap = new WeakMap();
-console.log(weakMap); 
+// const weakMap = new WeakMap();
+// console.log(weakMap); 
 
-let obj = {};
+// let obj = {};
 
-weakMap.set(obj, 'hello');
+// weakMap.set(obj, 'hello');
 
 
-for (let i of weakMap) {
+// for (let i of weakMap) {
 
-    console.log(i);
-}
+//     console.log(i);
+// }
+
+
+// create Set
+const set1 = new Set(); 
+console.log(set1); 
+
+const set2 = new Set([1, 'hello', {count : true}]);
+console.log(set2); 
