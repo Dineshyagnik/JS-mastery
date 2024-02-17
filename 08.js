@@ -3434,9 +3434,16 @@ let data=[
 // }
 
 
-// create Set
-const set1 = new Set(); 
-console.log(set1); 
+// // create Set
+// const set1 = new Set(); 
+// console.log(set1); 
 
-const set2 = new Set([1, 'hello', {count : true}]);
-console.log(set2); 
+// const set2 = new Set([1, 'hello', {count : true}],);
+// console.log(set2); 
+
+// // Set with duplicate values
+// const set3 = new Set([1, 1, 2, 2]);
+// console.log(set3); 
+
+const set1 = new Set([1, 2, 3]);
+console.log(set1.values()); 
