@@ -3445,5 +3445,16 @@ let data=[
 // const set3 = new Set([1, 1, 2, 2]);
 // console.log(set3); 
 
-const set1 = new Set([1, 2, 3]);
-console.log(set1.values()); 
+// const set1 = new Set([1, 2, 3]);
+// console.log(set1.values()); 
+
+
+
+const set = new Set([1, 2]);
+console.log(set.values());
+
+set.add(3);
+console.log(set.values());
+
+set.add(1);
+console.log(set.values());
