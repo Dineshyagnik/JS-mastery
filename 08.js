@@ -3450,11 +3450,39 @@ let data=[
 
 
 
-const set = new Set([1, 2]);
-console.log(set.values());
+// const set = new Set([1, 2]);
+// console.log(set.values());
 
-set.add(3);
-console.log(set.values());
+// set.add(3);
+// console.log(set.values());
 
-set.add(1);
-console.log(set.values());
+// set.add(1);
+// console.log(set.values());
+
+// aysnc and await
+
+// console.log('One');
+// console.log('Two');
+// console.log('Three');
+
+
+// function fun(){
+//     console.log("Hello world");
+// };
+// setTimeout(fun,2000);
+
+// console.log('Hello');
+// setTimeout(()=>{
+// console.log('Hello world');
+// },4000);
+
+
+console.log('One');
+console.log('Two');
+
+setTimeout(() => {
+    console.log('hello world');
+}, 3000);
+
+console.log('Three');
+console.log('Four');
