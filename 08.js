@@ -3477,12 +3477,36 @@ let data=[
 // },4000);
 
 
-console.log('One');
-console.log('Two');
+// console.log('One');
+// console.log('Two');
 
-setTimeout(() => {
-    console.log('hello world');
-}, 3000);
+// setTimeout(() => {
+//     console.log('hello world');
+// }, 3000);
 
-console.log('Three');
-console.log('Four');
+// console.log('Three');
+// console.log('Four');
+
+
+// Callback 
+
+// function
+// function greet(name) {
+//     console.log('Hi' + ' ' + name);
+// }
+
+// greet('Peter'); 
+
+// function
+function greet(name, callback) {
+    console.log('Hi' + ' ' + name);
+    callback();
+}
+
+// callback function
+function callMe() {
+    console.log('I am callback function');
+}
+
+// passing function as an argument
+greet('Peter', callMe);
