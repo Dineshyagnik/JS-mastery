@@ -3525,19 +3525,49 @@ let data=[
 // setTimeout(greet, 2000);
 // sayName('John');
 
-// Callback Function Example
-function greet(name, myFunction) {
-    console.log('Hello world');
+// // Callback Function Example
+// function greet(name, myFunction) {
+//     console.log('Hello world');
 
-    // callback function
-    // executed only after the greet() is executed
-    myFunction(name);
-}
+//     // callback function
+//     // executed only after the greet() is executed
+//     myFunction(name);
+// }
 
-// callback function
-function sayName(name) {
-    console.log('Hello' + ' ' + name);
-}
+// // callback function
+// function sayName(name) {
+//     console.log('Hello' + ' ' + name);
+// }
 
-// calling the function after 2 seconds
-setTimeout(greet, 2000, 'John', sayName);
+// // calling the function after 2 seconds
+// setTimeout(greet, 2000, 'John', sayName);
+
+// const count = true;
+
+// let countValue = new Promise(function (resolve, reject) {
+//     if (count) {
+//         resolve("There is a count value.");
+//     } else {
+//         reject("There is no count value");
+//     }
+// });
+
+// console.log(countValue);
+
+
+// returns a promise
+
+let countValue = new Promise(function (resolve, reject) {
+  resolve("Promise resolved");
+});
+
+// executes when promise is resolved successfully
+
+countValue
+  .then(function successValue(result) {
+    console.log(result);
+  })
+
+  .then(function successValue1() {
+    console.log("You can call multiple functions this way.");
+  });
