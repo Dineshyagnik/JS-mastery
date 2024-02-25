@@ -3573,21 +3573,33 @@ let data=[
 //   });
 
 
+// // returns a promise
+// let countValue = new Promise(function (resolve, reject) {
+//    reject('Promise rejected'); 
+// });
+
+// // executes when promise is resolved successfully
+// countValue.then(
+//     function successValue(result) {
+//         console.log(result);
+//     },
+//  )
+
+// // executes if there is an error
+// .catch(
+//     function errorValue(result) {
+//         console.log(result);
+//     }
+// );
+
+
 // returns a promise
 let countValue = new Promise(function (resolve, reject) {
-   reject('Promise rejected'); 
+    resolve('Promise resolved'); 
 });
 
-// executes when promise is resolved successfully
-countValue.then(
-    function successValue(result) {
-        console.log(result);
-    },
- )
-
-// executes if there is an error
-.catch(
-    function errorValue(result) {
-        console.log(result);
+countValue.finally(
+    function greet() {
+        console.log('This code is executed.');
     }
 );
