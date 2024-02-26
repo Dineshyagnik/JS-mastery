@@ -3594,12 +3594,42 @@ let data=[
 
 
 // returns a promise
-let countValue = new Promise(function (resolve, reject) {
-    resolve('Promise resolved'); 
+// let countValue = new Promise(function (resolve, reject) {
+//     resolve('Promise resolved'); 
+// });
+
+// countValue.finally(
+//     function greet() {
+//         console.log('This code is executed.');
+//     }
+// );
+
+
+// async function example
+
+// async function f() {
+//     console.log('Async function.');
+//     return Promise.resolve(1);
+// }
+
+// f(); 
+
+
+// a promise
+let promise = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+    resolve('Promise resolved')}, 4000); 
 });
 
-countValue.finally(
-    function greet() {
-        console.log('This code is executed.');
-    }
-);
+// async function
+async function asyncFunc() {
+
+    // wait until the promise resolves 
+    let result = await promise; 
+
+    console.log(result);
+    console.log('hello');
+}
+
+// calling the async function
+asyncFunc();
