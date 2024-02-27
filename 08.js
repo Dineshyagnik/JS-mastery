@@ -3615,6 +3615,25 @@ let data=[
 // f(); 
 
 
+// // a promise
+// let promise = new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//     resolve('Promise resolved')}, 4000); 
+// });
+
+// // async function
+// async function asyncFunc() {
+
+//     // wait until the promise resolves 
+//     let result = await promise; 
+
+//     console.log(result);
+//     console.log('hello');
+// }
+
+// // calling the async function
+// asyncFunc();
+
 // a promise
 let promise = new Promise(function (resolve, reject) {
     setTimeout(function () {
@@ -3623,13 +3642,16 @@ let promise = new Promise(function (resolve, reject) {
 
 // async function
 async function asyncFunc() {
+    try {
+        // wait until the promise resolves 
+        let result = await promise; 
 
-    // wait until the promise resolves 
-    let result = await promise; 
-
-    console.log(result);
-    console.log('hello');
+        console.log(result);
+    }   
+    catch(error) {
+        console.log(error);
+    }
 }
 
 // calling the async function
-asyncFunc();
+asyncFunc(); // Promise resolved
