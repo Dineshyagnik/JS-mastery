@@ -3704,21 +3704,21 @@ let data=[
 // }, 2000);
 
 
-// JSON object
-const dataa = {
-    "name": "John",
-    "age": 22,
-    "hobby": {
-	"reading" : true,
-	"gaming" : false,
-	"sport" : "football"
-    },
-    "class" : ["JavaScript", "HTML", "CSS"],
-    "dataa2":[
-        {"book":"The Mind Recognizer"},
-        {"Alphabet":"ABCDEFGHIJKLMNOPQRSTUVWXYZ"},
-    ]
-}
+// // JSON object
+// const dataa = {
+//     "name": "John",
+//     "age": 22,
+//     "hobby": {
+// 	"reading" : true,
+// 	"gaming" : false,
+// 	"sport" : "football"
+//     },
+//     "class" : ["JavaScript", "HTML", "CSS"],
+//     "dataa2":[
+//         {"book":"The Mind Recognizer"},
+//         {"Alphabet":"ABCDEFGHIJKLMNOPQRSTUVWXYZ"},
+//     ]
+// }
 
 // console.log(dataa.name); 
 // console.log(dataa.hobby);
@@ -3727,5 +3727,13 @@ const dataa = {
 // console.log(dataa.class[1]);
 // console.log(dataa.dataa2[0]);
 
-console.log(dataa.dataa2[0]);
+// console.log(dataa.dataa2[0]);
 
+const time1 = new Date(0);
+
+// epoch time
+console.log(time1);
+
+// 100000000000 milliseconds after the epoch time
+const time2 = new Date(100000000000)
+console.log(time2);
