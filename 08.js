@@ -3761,12 +3761,26 @@ let data=[
 
 
 
-// nested function example
+// // nested function example
+// function greet(name) {
+//     function displayName() {
+//         console.log('Hi' + ' ' + name);
+//     }
+//     displayName();
+// }
+
+// greet('John'); 
+
+
 function greet(name) {
     function displayName() {
         console.log('Hi' + ' ' + name);
     }
-    displayName();
+
+    // returning a function
+    return displayName;
 }
 
-greet('John'); 
+const g1 = greet('John');
+console.log(g1); 
+g1(); 
