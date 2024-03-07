@@ -3772,15 +3772,32 @@ let data=[
 // greet('John'); 
 
 
-function greet(name) {
-    function displayName() {
-        console.log('Hi' + ' ' + name);
-    }
+// function greet(name) {
+//     function displayName() {
+//         console.log('Hi' + ' ' + name);
+//     }
 
-    // returning a function
+//     // returning a function
+//     return displayName;
+// }
+
+// const g1 = greet('John');
+// console.log(g1); 
+// g1(); 
+
+
+// javascript closure example
+
+// outer function
+function greet() {
+
+    let name = 'John';
+    function displayName() {
+        return 'Hi' + ' ' + name;
+    }
     return displayName;
 }
 
-const g1 = greet('John');
-console.log(g1); 
-g1(); 
+const g1 = greet();
+console.log(g1);
+console.log(g1()); 
