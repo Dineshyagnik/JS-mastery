@@ -3789,15 +3789,34 @@ let data=[
 // javascript closure example
 
 // outer function
-function greet() {
+// function greet() {
 
-    let name = 'John';
-    function displayName() {
-        return 'Hi' + ' ' + name;
+//     let name = 'John';
+//     function displayName() {
+//         return 'Hi' + ' ' + name;
+//     }
+//     return displayName;
+// }
+
+// const g1 = greet();
+// console.log(g1);
+// console.log(g1()); 
+
+
+// closure example
+
+function calculate(x) {
+    function multiply(y) {
+        return x * y;
     }
-    return displayName;
+    return multiply;
 }
 
-const g1 = greet();
-console.log(g1);
-console.log(g1()); 
+const multiply3 = calculate(3);
+const multiply4 = calculate(4);
+
+console.log(multiply3); 
+console.log(multiply3()); 
+
+console.log(multiply3(6)); 
+console.log(multiply4(2)); 
