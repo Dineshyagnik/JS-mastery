@@ -3822,8 +3822,26 @@ let data=[
 // console.log(multiply4(2)); 
 
 
-let a = this;
-console.log(a);
+// let a = this;
+// console.log(a);
 
-this.name = 'Sarah';
-console.log(window.name); 
+// this.name = 'Sarah';
+// console.log(window.name); 
+
+
+// function greet() {
+//     console.log(this);
+// }
+
+// greet();
+
+
+function Person() {
+
+    this.name = 'Jack';
+    console.log(this);
+
+}
+
+let person1 = new Person();
+console.log(person1.name);
