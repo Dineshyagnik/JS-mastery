@@ -3836,12 +3836,25 @@ let data=[
 // greet();
 
 
-function Person() {
+// function Person() {
 
-    this.name = 'Jack';
-    console.log(this);
+//     this.name = 'Jack';
+//     console.log(this);
 
+// }
+
+// let person1 = new Person();
+// console.log(person1.name);
+
+
+const person = {
+    name : 'Jack',
+    age: 25,
+    
+    greet() {
+        console.log(this);
+        console.log(this.name);
+    }
 }
 
-let person1 = new Person();
-console.log(person1.name);
+person.greet();
