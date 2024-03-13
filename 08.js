@@ -3847,14 +3847,30 @@ let data=[
 // console.log(person1.name);
 
 
-const person = {
-    name : 'Jack',
-    age: 25,
+// const person = {
+//     name : 'Jack',
+//     age: 25,
     
-    greet() {
-        console.log(this);
-        console.log(this.name);
-    }
+//     greet() {
+//         console.log(this);
+//         console.log(this.name);
+//     }
+// }
+
+// person.greet();
+
+
+// generator function
+function* generatorFunc() {
+
+    console.log("1. code before the first yield");
+    yield 100;
+    
+   console.log("2. code before the second yield");
+    yield 200;
 }
 
-person.greet();
+// returns generator object
+const generator = generatorFunc();
+
+console.log(generator.next());
