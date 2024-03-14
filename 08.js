@@ -3860,17 +3860,39 @@ let data=[
 // person.greet();
 
 
+// // generator function
+// function* generatorFunc() {
+
+//     console.log("1. code before the first yield");
+//     yield 100;
+    
+//    console.log("2. code before the second yield");
+//     yield 200;
+// }
+
+// // returns generator object
+// const generator = generatorFunc();
+
+// console.log(generator.next());
+
+
 // generator function
 function* generatorFunc() {
 
-    console.log("1. code before the first yield");
-    yield 100;
+    // returns 'hello' at first next()
+    let x = yield 'hello';
     
-   console.log("2. code before the second yield");
-    yield 200;
+    // returns passed argument on the second next()
+    console.log(x);
+    console.log('some code');
+
+    // returns 5 on second next()
+    yield 5;
+    
 }
 
-// returns generator object
 const generator = generatorFunc();
 
+console.log(generator.next());
+console.log(generator.next(6));
 console.log(generator.next());
