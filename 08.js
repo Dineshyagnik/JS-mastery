@@ -3876,23 +3876,37 @@ let data=[
 // console.log(generator.next());
 
 
-// generator function
-function* generatorFunc() {
+// // generator function
+// function* generatorFunc() {
 
-    // returns 'hello' at first next()
-    let x = yield 'hello';
+//     // returns 'hello' at first next()
+//     let x = yield 'hello';
     
-    // returns passed argument on the second next()
-    console.log(x);
-    console.log('some code');
+//     // returns passed argument on the second next()
+//     console.log(x);
+//     console.log('some code');
 
-    // returns 5 on second next()
-    yield 5;
+//     // returns 5 on second next()
+//     yield 5;
     
+// }
+
+// const generator = generatorFunc();
+
+// console.log(generator.next());
+// console.log(generator.next(6));
+// console.log(generator.next());
+
+
+
+// program to display value
+var a = 4;
+
+function greet() {
+    b = 'hello';
+    console.log(b); 
+    var b;
 }
 
-const generator = generatorFunc();
-
-console.log(generator.next());
-console.log(generator.next(6));
-console.log(generator.next());
+greet(); 
+console.log(b);
