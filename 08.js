@@ -3899,14 +3899,38 @@ let data=[
 
 
 
-// program to display value
-var a = 4;
+// // program to display value
+// var a = 4;
 
-function greet() {
-    b = 'hello';
-    console.log(b); 
-    var b;
+// function greet() {
+//     b = 'hello';
+//     console.log(b); 
+//     var b;
+// }
+
+// greet(); 
+// console.log(b);
+
+
+// variable declared using let
+let name = 'Sara';
+{
+    // can be accessed only inside
+    let name = 'Peter';
+
+    console.log(name); // Peter
 }
+console.log(name); // Sara 
 
-greet(); 
-console.log(b);
+// name declared with const cannot be changed
+// const name = 'Sara';
+
+class Person {
+    constructor(name) {
+      this.name = name;
+    }
+  }
+  
+  const person1 = new Person('John');
+  
+  console.log(person1.name); // John
