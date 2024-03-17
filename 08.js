@@ -3913,24 +3913,39 @@ let data=[
 
 
 // variable declared using let
-let name = 'Sara';
-{
-    // can be accessed only inside
-    let name = 'Peter';
+// let name = 'Sara';
+// {
+//     // can be accessed only inside
+//     let name = 'Peter';
 
-    console.log(name); // Peter
+//     console.log(name); // Peter
+// }
+// console.log(name); // Sara 
+
+// // name declared with const cannot be changed
+// // const name = 'Sara';
+
+// class Person {
+//     constructor(name) {
+//       this.name = name;
+//     }
+//   }
+  
+//   const person1 = new Person('John');
+  
+//   console.log(person1.name); // John
+
+
+function sum(x, y = 5) {
+
+    // take sum
+    // the value of y is 5 if not passed
+    console.log(x + y);
 }
-console.log(name); // Sara 
 
-// name declared with const cannot be changed
-// const name = 'Sara';
+sum(5); // 10
+sum(5, 15); // 20
 
-class Person {
-    constructor(name) {
-      this.name = name;
-    }
-  }
-  
-  const person1 = new Person('John');
-  
-  console.log(person1.name); // John
+
+
+
