@@ -3936,16 +3936,43 @@ let data=[
 //   console.log(person1.name); // John
 
 
-function sum(x, y = 5) {
+// function sum(x, y = 5) {
 
-    // take sum
-    // the value of y is 5 if not passed
-    console.log(x + y);
+//     // take sum
+//     // the value of y is 5 if not passed
+//     console.log(x + y);
+// }
+
+// sum(5); // 10
+// sum(5, 15); // 20
+
+
+// // before you would do something like this
+// const person = {
+//     name: 'Sara',
+//     age: 25,
+//     gender: 'female'    
+// }
+
+// let name = person.name;
+// let age = person.age;
+// let gender = person.gender;
+
+// console.log(name); // Sara
+// console.log(age); // 25
+// console.log(gender); // female
+
+
+const person = {
+    name: 'Sara',
+    age: 25,
+    gender: 'female'    
 }
 
-sum(5); // 10
-sum(5, 15); // 20
+let { name, age, gender } = person;
 
-
+console.log(name); // Sara
+console.log(age); // 25
+console.log(gender); // female
 
 
