@@ -3963,16 +3963,26 @@ let data=[
 // console.log(gender); // female
 
 
-const person = {
-    name: 'Sara',
-    age: 25,
-    gender: 'female'    
-}
+// const person = {
+//     name: 'Sara',
+//     age: 25,
+//     gender: 'female'    
+// }
 
-let { name, age, gender } = person;
+// let { name, age, gender } = person;
 
-console.log(name); // Sara
-console.log(age); // 25
-console.log(gender); // female
+// console.log(name); // Sara
+// console.log(age); // 25
+// console.log(gender); // female
 
+// returns a promise
+let countValue = new Promise(function (resolve, reject) {
+   reject('Promise rejected'); 
+});
 
+// executes when promise is resolved successfully
+countValue.then(
+    function successValue(result) {
+        console.log(result); // Promise resolved
+    },
+ )
