@@ -3975,14 +3975,30 @@ let data=[
 // console.log(age); // 25
 // console.log(gender); // female
 
-// returns a promise
-let countValue = new Promise(function (resolve, reject) {
-   reject('Promise rejected'); 
-});
+// // returns a promise
+// let countValue = new Promise(function (resolve, reject) {
+//    reject('Promise rejected'); 
+// });
 
-// executes when promise is resolved successfully
-countValue.then(
-    function successValue(result) {
-        console.log(result); // Promise resolved
-    },
- )
+// // executes when promise is resolved successfully
+// countValue.then(
+//     function successValue(result) {
+//         console.log(result); // Promise resolved
+//     },
+//  )
+
+
+// let numbers = [10, 30, 40, 60, 80]
+
+// // access first element
+// console.log(numbers[0]);
+
+// // access third element
+// console.log(numbers[2]);
+
+let dailyActivities = ['eat', 'sleep'];
+
+// add an element at the end
+dailyActivities.push('exercise');
+
+console.log(dailyActivities);
