@@ -3996,9 +3996,16 @@ let data=[
 // // access third element
 // console.log(numbers[2]);
 
+// let dailyActivities = ['eat', 'sleep'];
+
+// // add an element at the end
+// dailyActivities.push('exercise');
+
+// console.log(dailyActivities);
+
 let dailyActivities = ['eat', 'sleep'];
 
-// add an element at the end
-dailyActivities.push('exercise');
+// add an element at the start
+dailyActivities.unshift('work'); 
 
 console.log(dailyActivities);
