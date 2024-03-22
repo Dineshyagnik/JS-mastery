@@ -4003,9 +4003,16 @@ let data=[
 
 // console.log(dailyActivities);
 
-let dailyActivities = ['eat', 'sleep'];
+// let dailyActivities = ['eat', 'sleep'];
 
-// add an element at the start
-dailyActivities.unshift('work'); 
+// // add an element at the start
+// dailyActivities.unshift('work'); 
 
-console.log(dailyActivities);
+// console.log(dailyActivities);
+
+let numbers = [1, 2, 3, 4, 5];
+
+// remove one element at the index 2
+numbers.splice(2, 1);
+
+console.log(numbers);
