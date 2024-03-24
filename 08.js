@@ -4010,9 +4010,14 @@ let data=[
 
 // console.log(dailyActivities);
 
-let numbers = [1, 2, 3, 4, 5];
+// let numbers = [1, 2, 3, 4, 5];
 
-// remove one element at the index 2
-numbers.splice(2, 1);
+// // remove one element at the index 2
+// numbers.splice(2, 1);
 
-console.log(numbers);
+// console.log(numbers);
+
+const dailyActivities = [ 'eat', 'sleep'];
+
+// return the length of array
+console.log(dailyActivities.length);
