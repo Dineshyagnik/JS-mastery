@@ -4017,7 +4017,31 @@ let data=[
 
 // console.log(numbers);
 
-const dailyActivities = [ 'eat', 'sleep'];
+// const dailyActivities = [ 'eat', 'sleep'];
 
-// return the length of array
-console.log(dailyActivities.length);
+// // return the length of array
+// console.log(dailyActivities.length);
+
+// let studentsData = [['Jack', 24], ['Sara', 23], ['Peter', 24]];
+
+// let student1 = ['Jack', 24];
+// let student2 = ['Sara', 23];
+// let student3 = ['Peter', 24];
+
+// // multidimensional array
+// let studentsData = [student1, student2, student3];
+
+let x = [
+    ['Jack', 24],
+    ['Sara', 23], 
+    ['Peter', 24]
+    ];
+    
+    // access the first item 
+    console.log(x[0]); // ["Jack", 24]
+    
+    // access the first item of the first inner array
+    console.log(x[0][0]); // Jack
+    
+    // access the second item of the third inner array
+    console.log(x[2][1]); // 24
