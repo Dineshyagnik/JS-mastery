@@ -4031,17 +4031,30 @@ let data=[
 // // multidimensional array
 // let studentsData = [student1, student2, student3];
 
-let x = [
-    ['Jack', 24],
-    ['Sara', 23], 
-    ['Peter', 24]
-    ];
+// let x = [
+//     ['Jack', 24],
+//     ['Sara', 23], 
+//     ['Peter', 24]           
+//     ];
     
-    // access the first item 
-    console.log(x[0]); // ["Jack", 24]
-    
-    // access the first item of the first inner array
-    console.log(x[0][0]); // Jack
-    
-    // access the second item of the third inner array
-    console.log(x[2][1]); // 24
+//     console.log(x[0]); 
+//     console.log(x[0][0]); 
+//     console.log(x[2][1]); 
+
+
+// let studentsData = [['Jack', 24], ['Sara', 23],];
+// studentsData.push(['Peter', 24]);
+
+// console.log(studentsData); 
+
+// using index notation
+// let studentsData = [['Jack', 24], ['Sara', 23],];
+// studentsData[1][2] = 'hello';
+
+// console.log(studentsData);
+
+// using push()
+let studentsData = [['Jack', 24], ['Sara', 23],];
+studentsData[1].push('hello');
+
+console.log(studentsData);
