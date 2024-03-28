@@ -4060,24 +4060,63 @@ let data=[
 // console.log(studentsData);
 
 
-const fruits = [];
-fruits.push("banana", "apple", "peach");
-console.log(fruits.length); 
+// const fruits = [];
+// fruits.push("banana", "apple", "peach");
+// console.log(fruits.length); 
 
 
-fruits[5] = "mango";
-console.log(fruits[5]); 
-console.log(Object.keys(fruits)); 
-console.log(fruits.length);
+// fruits[5] = "mango";
+// console.log(fruits[5]); 
+// console.log(Object.keys(fruits)); 
+// console.log(fruits.length);
 
 
-fruits.length = 10;
-console.log(fruits); 
-console.log(Object.keys(fruits)); 
-console.log(fruits.length);
-console.log(fruits[8]); 
+// fruits.length = 10;
+// console.log(fruits); 
+// console.log(Object.keys(fruits)); 
+// console.log(fruits.length);
+// console.log(fruits[8]); 
 
-fruits.length = 2;
-console.log(Object.keys(fruits));
-console.log(fruits.length); 
+// fruits.length = 2;
+// console.log(Object.keys(fruits));
+// console.log(fruits.length); 
+
+
+// const colors = ["red", "yellow", "blue"];
+// colors[5] = "purple";
+// colors.forEach((item, index) => {
+//   console.log(`${index}: ${item}`);
+// });
+
+
+// colors.reverse();
+
+
+// const colors = ["red", "yellow", "blue"];
+// colors[5] = "purple";
+// const iterator = colors.keys();
+// for (const key of iterator) {
+//   console.log(`${key}: ${colors[key]}`);
+// }
+
+
+// const newColors = colors.toReversed(); 
+
+
+// const fruits = ["Apple", "Banana"];
+// console.log(fruits.length);
+
+// const fruits2 = new Array("Apple", "Banana");
+// console.log(fruits2.length);
+
+
+// const fruits3 = "Apple, Banana".split(", ");
+// console.log(fruits3.length);
+
+
+
+// const fruits = ["Apple", "Banana"];
+// const fruitsString = fruits.join(", ");
+// console.log(fruitsString);
+
 
