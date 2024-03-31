@@ -4119,21 +4119,32 @@ let data=[
 // const fruitsString = fruits.join(", ");
 // console.log(fruitsString);
 
-function method(callbackFn, thisArg) {
-    const length = this.length;
-    for (let i = 0; i < length; i++) {
-      if (i in this) {
-        const result = callbackFn.call(thisArg, this[i], i, this);
-        // Do something with result; maybe return early
-      }
-    }
-  }
+// function method(callbackFn, thisArg) {
+//     const length = this.length;
+//     for (let i = 0; i < length; i++) {
+//       if (i in this) {
+//         const result = callbackFn.call(thisArg, this[i], i, this);
+//         // Do something with result; maybe return early
+//       }
+//     }
+//   }
   
-  const fruits = ["Apple", "Strawberry", "Cherry", "Banana", "Mango"];
-  const start = 0;
-  const deleteCount = 3;
-  const removedItems = fruits.splice(start, deleteCount);
-  console.log(fruits);
-  // ["Banana", "Mango"]
-  console.log(removedItems);
-  // ["Apple", "Strawberry", "Cherry"]
+//   const fruits = ["Apple", "Strawberry", "Cherry", "Banana", "Mango"];
+//   const start = 0;
+//   const deleteCount = 3;
+//   const removedItems = fruits.splice(start, deleteCount);
+//   console.log(fruits);
+//   // ["Banana", "Mango"]
+//   console.log(removedItems);
+//   // ["Apple", "Strawberry", "Cherry"]
+
+
+
+function init() {
+  var name = "Mozilla"; 
+  function displayName() {
+    console.log(name); 
+  }
+  displayName();
+}
+init();
