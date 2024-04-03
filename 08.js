@@ -4185,12 +4185,39 @@ let data=[
 // myFunc(mycar);
 // console.log(mycar.make); // "Toyota"
 
-function myFunc(theArr) {
-  theArr[0] = 30;
+// function myFunc(theArr) {
+//   theArr[0] = 30;
+// }
+
+// const arr = [45];
+
+// console.log(arr[0]); // 45
+// myFunc(arr);
+// console.log(arr[0]); // 30
+
+
+// The following variables are defined in the global scope
+const num1 = 20;
+const num2 = 3;
+const name = "Chamakh";
+
+// This function is defined in the global scope
+function multiply() {
+  return num1 * num2;
 }
 
-const arr = [45];
+console.log(multiply()); // 60
 
-console.log(arr[0]); // 45
-myFunc(arr);
-console.log(arr[0]); // 30
+// A nested function example
+function getScore() {
+  const num1 = 2;
+  const num2 = 3;
+
+  function add() {
+    return `${name} scored ${num1 + num2}`;
+  }
+
+  return add();
+}
+
+console.log(getScore()); // "Chamakh scored 5"
