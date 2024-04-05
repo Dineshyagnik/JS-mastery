@@ -4246,29 +4246,52 @@ let data=[
 //   };
 // }
 
+// const num1 = 20;
+// const num2 = 3;
+// const name = "Chamakh";
+
+// // This function is defined in the global scope
+// function multiply() {
+//   return num1 * num2;
+// }
+
+// console.log(multiply()); // 60
+
+// // A nested function example
+// function getScore() {
+//   const num1 = 2;
+//   const num2 = 3;
+
+//   function add() {
+//     return `${name} scored ${num1 + num2}`;
+//   }
+
+//   return add();
+// }
+
+// console.log(getScore());
 
 
-const num1 = 20;
-const num2 = 3;
-const name = "Chamakh";
+// let value = 3;
+// let valueCopy = value; 
 
-// This function is defined in the global scope
-function multiply() {
-  return num1 * num2;
-}
+// console.log(valueCopy);
 
-console.log(multiply()); // 60
+// // Change valueCopy
+// valueCopy = 100
+// console.log(valueCopy); 
+ 
+// console.log(value); // 3
 
-// A nested function example
-function getScore() {
-  const num1 = 2;
-  const num2 = 3;
+// let array = [1,2,3];
+// let arrayCopy = array; // create copy
 
-  function add() {
-    return `${name} scored ${num1 + num2}`;
-  }
+// console.log(arrayCopy); // [1,2,3];
 
-  return add();
-}
+// // Change 1st element of the array
+// arrayCopy[0] = 'lol';
+// console.log(arrayCopy); // [ 'lol', 2, 3 ]
 
-console.log(getScore());
+// // Original got affected
+// console.log(array);
+
