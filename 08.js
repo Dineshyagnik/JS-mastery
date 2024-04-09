@@ -4295,3 +4295,19 @@ let data=[
 // // Original got affected
 // console.log(array);
 
+const myString = "Hello World. How are you doing?";
+const splits = myString.split(" ", 3);
+
+console.log(splits); // [ "Hello", "World.", "How" ]
+
+
+const elements = ['Fire', 'Air', 'Water'];
+
+console.log(elements.join());
+// Expected output: "Fire,Air,Water"
+
+console.log(elements.join(''));
+// Expected output: "FireAirWater"
+
+console.log(elements.join('-'));
+// Expected output: "Fire-Air-Water"
