@@ -4295,19 +4295,45 @@ let data=[
 // // Original got affected
 // console.log(array);
 
-const myString = "Hello World. How are you doing?";
-const splits = myString.split(" ", 3);
+// const myString = "Hello World. How are you doing?";
+// const splits = myString.split(" ", 3);
 
-console.log(splits); // [ "Hello", "World.", "How" ]
+// console.log(splits); // [ "Hello", "World.", "How" ]
 
 
-const elements = ['Fire', 'Air', 'Water'];
+// const elements = ['Fire', 'Air', 'Water'];
 
-console.log(elements.join());
-// Expected output: "Fire,Air,Water"
+// console.log(elements.join());
+// // Expected output: "Fire,Air,Water"
 
-console.log(elements.join(''));
-// Expected output: "FireAirWater"
+// console.log(elements.join(''));
+// // Expected output: "FireAirWater"
 
-console.log(elements.join('-'));
-// Expected output: "Fire-Air-Water"
+// console.log(elements.join('-'));
+// // Expected output: "Fire-Air-Water"
+
+
+// function testNum(a) {
+//     let result;
+//     if (a > 0) {
+//       result = 'positive';
+//     } else {
+//       result = 'NOT positive';
+//     }
+//     return result;
+//   }
+  
+//   console.log(testNum(5));
+
+
+
+  function checkValue(a, b) {
+    if (a === 1) {
+      if (b === 2) {
+        console.log("a is 1 and b is 2");
+      }
+    } else {
+      console.log("a is not 1");
+    }
+  }
+  
