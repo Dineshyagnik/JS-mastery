@@ -4327,13 +4327,75 @@ let data=[
 
 
 
-  function checkValue(a, b) {
-    if (a === 1) {
-      if (b === 2) {
-        console.log("a is 1 and b is 2");
-      }
-    } else {
-      console.log("a is not 1");
-    }
+  // function checkValue(a, b) {
+  //   if (a === 1) {
+  //     if (b === 2) {
+  //       console.log("a is 1 and b is 2");
+  //     }
+  //   } else {
+  //     console.log("a is not 1");
+  //   }
+  // }
+  
+
+
+
+  // const module = {
+  //   x: 42,
+  //   getX: function () {
+  //     return this.x;
+  //   },
+  // };
+  
+  // const unboundGetX = module.getX;
+  // console.log(unboundGetX()); // The function gets invoked at the global scope
+  // // Expected output: undefined
+  
+  // const boundGetX = unboundGetX.bind(module);
+  // console.log(boundGetX());
+  // // Expected output: 42
+
+
+  // function log(...args) {
+  //   console.log(this, ...args);
+  // }
+  // const boundLog = log.bind("this value", 1, 2);
+  // const boundLog2 = boundLog.bind("new this value", 3, 4);
+  // boundLog2(5, 6); // "this value", 1, 2, 3, 4, 5, 6
+
+
+  // class Base {
+  //   constructor(...args) {
+  //     console.log(new.target === Base);
+  //     console.log(args);
+  //   }
+  // }
+  
+  // const BoundBase = Base.bind(null, 1, 2);
+  
+  // new BoundBase(3, 4); // true, [1, 2, 3, 4]
+
+
+  function list(...args) {
+    return args;
   }
   
+  function addArguments(arg1, arg2) {
+    return arg1 + arg2;
+  }
+  
+  console.log(list(1, 2, 3)); // [1, 2, 3]
+  
+  console.log(addArguments(1, 2)); // 3
+  
+  // Create a function with a preset leading argument
+  const leadingThirtySevenList = list.bind(null, 37);
+  
+  // Create a function with a preset first argument.
+  const addThirtySeven = addArguments.bind(null, 37);
+  
+  console.log(leadingThirtySevenList()); // [37]
+  console.log(leadingThirtySevenList(1, 2, 3)); // [37, 1, 2, 3]
+  console.log(addThirtySeven(5)); // 42
+  console.log(addThirtySeven(5, 10)); // 42
+  // (the last argument 10 is ignored)
